@@ -100,3 +100,22 @@ footer{
     background-color: var(--main-color);
     color: white;
 }
+
+hr{ width: 60%;
+    height: 1%;
+    background-color: var(--secondary-color);
+    margin: 7rem auto;
+}
+
+#semainier{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+ #semainier a img{
+    height: 20rem;
+    width: 20rem;
+    border-radius: 4rem;
+    filter: blur(1px);
+ }
