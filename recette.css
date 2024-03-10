@@ -1,0 +1,123 @@
+:root{
+    --main-color: #6B705C;
+    --secondary-color: #A5A58D;
+    --secondary-main-color: #AD4C3F;
+    
+}
+
+@font-face {
+    font-family: "Kanit";
+    src: url(Fonts/Kanit/Kanit-Bold.ttf);
+    src: url(Fonts/Kanit/Kanit-Regular.ttf);
+    src: url(Fonts/Kanit/Kanit-SemiBold.ttf);
+    src: url(Fonts/Kanit/Kanit-Light.ttf);
+}
+
+@font-face {
+    font-family: "Jost";
+    src: url(Fonts/Jost/Jost-Italic-VariableFont_wght.ttf);
+    src: url(Fonts/Jost/Jost-VariableFont_wght.ttf);
+}
+
+#sideNav {
+    height: 100%;
+    width: 15rem;
+    position: fixed;
+    background-color: var(--main-color);
+    top: 0;
+    padding-top: 60px;
+    transition: left 0.5s ease;
+    display: flex;
+    box-shadow: 3px 2px 33px -9px #45483a;
+    left: -15rem;
+}
+
+#sideNav ul li a{
+    text-decoration: none;
+    color: azure;
+    padding: 1rem 1rem 1rem 3rem;
+    font-size: 1.2rem;
+    display: block;
+
+}
+
+#sideNav ul li a:hover{
+    color:brown;
+}
+
+#sideNav.active {
+    left: 0;
+}
+#sideNav #closeBtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    color: white;
+    text-decoration: none;
+}
+
+
+#navBar {
+    background-color: var(--main-color);
+    width: 100%;
+    height: 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#navBar img{
+    height: 3rem;
+}
+
+header{
+  display: flex;
+  text-align: center;
+  background-image: url(image/lunchbox_dejeuner.jpg);
+  width: 100%;
+  height: 300px;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+header h1 {
+    font-size: clamp(1.5rem, 5vw, 3rem);
+}
+
+#sideBar{
+    display: grid/*flex; */;
+    /* flex-direction: column; */
+    background-color: var(--main-color);
+    height: 900px;
+    width: 20%;
+    color: white;
+    align-items: center;
+    justify-content: center;
+}
+
+h2, h3{
+    font-size: clamp(1rem, 2vw, 2rem);
+    font-family: "Jost";
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+}
+
+#sideBar ul{
+    display: block;
+    margin-top: 10px;
+}
+
+#sideBar ul li{
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    font-size: 0.8rem;
+    font-family: "Jost";
+}
+
+/* main h4, h5, p{
+    display: flex;
+} */
