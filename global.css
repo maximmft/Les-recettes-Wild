@@ -1,0 +1,20 @@
+:root{
+    --main-color: #6B705C;
+    --secondary-color: #A5A58D;
+    --secondary-main-color: #AD4C3F;
+    
+}
+
+@font-face {
+    font-family: "Kanit";
+    src: url(Fonts/Kanit/Kanit-Bold.ttf);
+    src: url(Fonts/Kanit/Kanit-Regular.ttf);
+    src: url(Fonts/Kanit/Kanit-SemiBold.ttf);
+    src: url(Fonts/Kanit/Kanit-Light.ttf);
+}
+
+@font-face {
+    font-family: "Jost";
+    src: url(Fonts/Jost/Jost-Italic-VariableFont_wght.ttf);
+    src: url(Fonts/Jost/Jost-VariableFont_wght.ttf);
+}
