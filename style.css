@@ -96,7 +96,75 @@ header h2 {
 
 }
 
-footer{
-    background-color: var(--main-color);
+hr{ width: 60%;
+    height: 1%;
+    background-color: var(--secondary-color);
+    margin: 6rem auto;
+}
+
+#semainier #top-image{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 3rem;
+}
+
+#semainier #bottom-image{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+
+#semainier a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    text-decoration: none;
+    background-size: 35rem 20rem;
+    background-position: center;
+    border-radius: 4rem;
+    width: 18rem;
+    height: 18rem;
+    font-size: 3rem;
     color: white;
 }
+
+#semainier a:hover {
+    width: 20rem;
+    height: 20rem;
+    transition: ;
+
+}
+
+#lundi {
+    background-image: url(image/onigiri.jpg);
+}
+
+#mardi {
+    background-image: url(image/onigiri.jpg);
+}
+
+#mercredi {
+    background-image: url(image/onigiri.jpg);
+}
+
+#jeudi {
+    background-image: url(image/onigiri.jpg);
+}
+
+#vendredi {
+    background-image: url(image/onigiri.jpg);
+}
+
+footer {
+    background-color: var(--main-color);
+    height: 3rem;
+    color: white;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    padding-left: 1rem;
+}
+
