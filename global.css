@@ -30,3 +30,7 @@
     src: url(Fonts/Jost/Jost-Italic-VariableFont_wght.ttf);
     src: url(Fonts/Jost/Jost-VariableFont_wght.ttf);
 }
+
+#burger-icon{
+    color: white;
+}
