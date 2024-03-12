@@ -7,9 +7,22 @@
 @font-face {
     font-family: "Kanit";
     src: url(Fonts/Kanit/Kanit-Bold.ttf);
+    font-weight: bold;
+}
+@font-face {
+    font-family: "Kanit";
     src: url(Fonts/Kanit/Kanit-Regular.ttf);
+    font-weight: regular;
+}
+@font-face {
+    font-family: "Kanit";
     src: url(Fonts/Kanit/Kanit-SemiBold.ttf);
+    font-weight: semi-bold;
+}
+@font-face {
+    font-family: "Kanit";
     src: url(Fonts/Kanit/Kanit-Light.ttf);
+    font-weight: light;
 }
 
 @font-face {
