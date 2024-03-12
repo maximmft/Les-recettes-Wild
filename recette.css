@@ -1,4 +1,4 @@
-:root{
+/* :root{
     --main-color: #6B705C;
     --secondary-color: #A5A58D;
     --secondary-main-color: #AD4C3F;
@@ -17,7 +17,7 @@
     font-family: "Jost";
     src: url(Fonts/Jost/Jost-Italic-VariableFont_wght.ttf);
     src: url(Fonts/Jost/Jost-VariableFont_wght.ttf);
-}
+} */
 
 #sideNav {
     height: 100%;
@@ -84,17 +84,23 @@ header{
 
 header h1 {
     font-size: clamp(1.5rem, 5vw, 3rem);
+    font-family: "Kanit";
+}
+
+main {
+    display: flex;
+    flex-direction: row;
 }
 
 #sideBar{
-    display: grid/*flex; */;
-    /* flex-direction: column; */
+    display: flex;
+    flex-direction: column;
     background-color: var(--main-color);
     height: 900px;
     width: 20%;
     color: white;
     align-items: center;
-    justify-content: center;
+    padding-top: 10%;
 }
 
 h2, h3{
@@ -103,10 +109,10 @@ h2, h3{
     font-weight: 500;
     display: flex;
     justify-content: center;
+    padding-bottom: 20px;
 }
 
 #sideBar ul{
-    display: block;
     margin-top: 10px;
 }
 
@@ -118,6 +124,27 @@ h2, h3{
     font-family: "Jost";
 }
 
-/* main h4, h5, p{
+#recette{
     display: flex;
-} */
+    flex-direction: column;
+}
+
+#etape1, #etape2{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 30%;
+}
+
+h4, h5{
+    padding-bottom: 10%;
+    font-family: "Kanit";
+    font-size: 40px;
+    color: var(--secondary-main-color);
+    text-decoration: underline;
+}
+
+p{
+    font-family: "Jost";
+    font-size: 16px;
+}
