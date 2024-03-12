@@ -1,8 +1,5 @@
-:root{
-    --main-color: #6B705C;
-    --secondary-color: #A5A58D;
-    --secondary-main-color: #AD4C3F;
-    
+body{
+    font-family: jost;
 }
 
 #sideNav {
@@ -75,12 +72,15 @@ header h1 {
     font-size: clamp(3rem, 5vw, 4rem);
     color: var(--main-color);
     margin-top: 3rem;
+    font-family: kanit;
+    font-weight: bold;
 
 }
 
 header h2 {
     font-size: clamp(1.5rem, 3vw, 3rem);
     color:var(--secondary-color);
+    font-family:kanit;
 }
 
 #weekDate p{
@@ -116,30 +116,34 @@ hr{ width: 60%;
 }
 
 
-#semainier a {
+#semainier article {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 10px;
-    text-decoration: none;
+    margin: 2rem;
     background-size: 35rem 20rem;
     background-position: center;
     border-radius: 4rem;
     width: 18rem;
     height: 18rem;
+    
+}
+
+#semainier a{
+    text-decoration: none;
     font-size: 3rem;
     color: white;
 }
 
 #semainier a:hover {
-    width: 20rem;
-    height: 20rem;
-    transition: ;
+    box-shadow: 5px 5px 50px -14px #b9b9b9;
+    transition: all, 1s, ease-in-out ;
 
 }
 
 #lundi {
     background-image: url(image/onigiri.jpg);
+    
 }
 
 #mardi {
@@ -168,3 +172,19 @@ footer {
     padding-left: 1rem;
 }
 
+
+@media only screen and (max-width : 600px) {
+    #semainier #top-image{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        margin-bottom: 3rem;
+    }
+    
+    #semainier #bottom-image{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    
+}

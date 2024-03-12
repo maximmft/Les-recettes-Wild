@@ -134,6 +134,7 @@ h3 {
 #recette {
     display: flex;
     flex-direction: column;
+    margin-left: 5%;
 }
 
 #etape1,
@@ -146,7 +147,6 @@ h3 {
 
 h4,
 h5 {
-    padding-bottom: 10%;
     font-family: "Kanit";
     font-size: 40px;
     color: var(--secondary-main-color);
@@ -154,9 +154,10 @@ h5 {
 
 hr {
     width: 60%;
-    height: 1%;
+    height: 1px;
     background-color: var(--secondary-main-color);
-    margin: 6rem auto;
+    margin-bottom: 3rem;
+    border: none;
 }
 
 p {
