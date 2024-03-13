@@ -2,59 +2,6 @@ body{
     font-family: jost;
 }
 
-#sideNav {
-    height: 100%;
-    width: 15rem;
-    position: fixed;
-    background-color: var(--main-color);
-    top: 0;
-    padding-top: 60px;
-    transition: left 0.5s ease;
-    display: flex;
-    box-shadow: 3px 2px 33px -9px #45483a;
-    left: -15rem;
-    align-items: center;
-}
-
-#sideNav ul li a{
-    text-decoration: none;
-    color: azure;
-    padding: 3rem 1rem;
-    font-size: 1.5rem;
-    display: block;
-
-}
-
-#sideNav ul li a:hover{
-    color: var(--secondary-main-color);
-}
-
-#sideNav.active {
-    left: 0;
-}
-#sideNav #closeBtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    color: white;
-    text-decoration: none;
-}
-
-
-#navBar {
-    background-color: var(--main-color);
-    width: 100%;
-    height: 5rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-#navBar img{
-    height: 3rem;
-}
-
 #headerSemainier{
     text-align: center;
     min-height: 350px;

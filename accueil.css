@@ -1,0 +1,110 @@
+header {
+    background-image: url("image/image-accueil.jpg");
+    height: 800px;
+    min-height: 350px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: clamp(3rem, 5vw, 6rem);
+    color: var(--secondary-main-color);
+    font-family: "kanit";
+    font-weight: bold;
+}
+
+header h2 {
+    font-size: clamp(1.5rem, 3vw, 3rem);
+    color: white;
+    font-family: "kanit";
+    font-weight: semi-bold;
+    margin-bottom: 20%;
+}
+
+#featured-recipes h2 {
+    font-size: clamp(1.5rem, 3vw, 3rem);
+    text-align: center;
+    margin: 5% 0%;
+    color: var(--main-color);
+    font-family: "kanit";
+    font-weight: semi-bold;
+}
+
+#article-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+article img {
+    width: 20rem;
+    height: 20rem;
+    border-radius: 4rem;
+    object-fit : cover;
+}
+
+article p {
+    font-size: clamp(0.5rem, 1.5vw, 1rem);
+    text-decoration: none;
+    color: var(--main-color);
+    padding-top: 5%;
+    ;
+    font-family: "Jost";
+}
+
+#button-container {
+    text-align: center;
+    padding: 60px 0px;
+}
+
+button {
+    background-color: var(--secondary-main-color);
+    border: none;
+    padding: 20px 150px;
+    border-radius: 20px;
+    box-shadow: 10px 5px 5px var(--secondary-color);
+}
+
+button a {
+    font-size: clamp(0.5rem, 1.5vw, 1rem);
+    color: white;
+    text-decoration: none;
+    font-family: "Jost";
+}
+
+hr {
+    color: var(--main-color);
+    width: 60%;
+    margin: 6rem auto;
+}
+
+footer {
+    background-color: var(--main-color);
+    padding: 0rem 1rem;
+    height: 3rem;
+    color: white;
+    font-family: "kanit";
+    font-size: clamp(0.5rem, 2.5vw, 1rem);
+    font-weight: regular;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+    font-weight: regular;
+    font-size: clamp(0.5rem, 2.5vw, 1.5rem);
+}

@@ -18,6 +18,9 @@ function closeNav() {
 
 // Begin Section Side Bar
 
+console.log(document.body.clientWidth);
+if (document.body.clientWidth > 900){
+
 (function () {
   let stickySideBar = document.querySelector("#sideBar");
 
@@ -60,5 +63,5 @@ function closeNav() {
   window.addEventListener("scroll", sticky);
 
 })()
-
+};
 // End Section Side Bar
