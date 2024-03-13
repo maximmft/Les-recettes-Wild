@@ -142,7 +142,7 @@ hr{ width: 60%;
 }
 
 #lundi {
-    background-image: url(image/onigiri.jpg);
+    background-image: url(image/onigiri\ -\ blurred.jpg);
     
 }
 
@@ -173,18 +173,20 @@ footer {
 }
 
 
-@media only screen and (max-width : 600px) {
+@media only screen and (max-width : 1000px) {
     #semainier #top-image{
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
         margin-bottom: 3rem;
+        align-items: center;
     }
     
     #semainier #bottom-image{
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
+        align-items: center;
     }
     
 }
