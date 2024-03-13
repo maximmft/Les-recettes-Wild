@@ -216,6 +216,7 @@ p {
     block-size: 100px;
     height: 40px;
     background-color: var(--main-color);
+    color: white;
     border-radius: 20px;
     margin: 5px;
     margin-bottom: 1px;
