@@ -52,6 +52,11 @@ article img {
     height: 20rem;
     border-radius: 4rem;
     object-fit : cover;
+    transition: all 0.3s linear;
+}
+
+article img:hover{
+    box-shadow: 0px 0px 10px var(--secondary-color);
 }
 
 article p {
@@ -68,19 +73,24 @@ article p {
     padding: 60px 0px;
 }
 
-button {
-    background-color: var(--secondary-main-color);
-    border: none;
-    padding: 20px 150px;
-    border-radius: 20px;
-    box-shadow: 10px 5px 5px var(--secondary-color);
-}
-
-button a {
+.button {
     font-size: clamp(0.5rem, 1.5vw, 1rem);
     color: white;
     text-decoration: none;
     font-family: "Jost";
+    background-color: var(--secondary-main-color);
+    border: none;
+    padding: 20px 150px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px var(--secondary-color);
+    cursor: pointer;
+    transition: all 0.3s linear;
+
+}
+
+.button:hover {
+    box-shadow: 0px 0px 20px var(--secondary-color);
+    padding: 30px 160px;
 }
 
 hr {
