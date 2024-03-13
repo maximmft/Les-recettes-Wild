@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="recette.css">
+    <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" /> 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <title>Les Recettes Wild</title>
+</head>
+<body>
+    <!-- Nav Bar de la recette -->
+    <nav id="navBar">
+            <nav id="sideNav">
+                <a id="closeBtn" href="#">×</a>
+                    <ul>
+                        <li><a href="">Les recettes Wild</a></li>
+                        <li><a href="">Semainier</a></li>
+                        <li><a href="">A propos de nous</a></li>
+                        <li><a href="">Nous contacter</a></li>
+                    </ul>
+                </nav>
+            <a href="#" id="openBtn">
+                <span class="material-symbols-outlined" id="burger-icon">
+                menu
+                </span>
+            </a>
+            <img src="image/logo.svg">
+            <span class="material-symbols-outlined">
+                search
+            </span>
+    </nav>
+    <!-- Header de la recette -->
+    <header>
+        <h1>Onigiri <br> thon et concombre</h1>
+    </header>
+    <!-- Main de la recette -->
+    <main>
+    <!-- Side Bar de la recette -->
+    <section id="sideBar">
+        <div id="icons">
+            <img class = "iconRestriction" src="image/icons/icons8-fish-48.png"></img>
+            <img class = "iconRestriction" src="image/icons/icons8-gluten-free-50.png"></img>
+            <img class = "iconRestriction" src="image/icons/icons8-lactose-free-50.png"><img>
+        </div>
+        <div>
+            <div class="rating"><!--
+            --><a href="#5" title="Donner 5 étoiles">★</a><!--
+            --><a href="#4" title="Donner 4 étoiles">★</a><!--
+            --><a href="#3" title="Donner 3 étoiles">★</a><!--
+            --><a href="#2" title="Donner 2 étoiles">★</a><!--
+            --><a href="#1" title="Donner 1 étoile">★</a>
+        </div>
+        <h2>Ingrédients</h2>
+        <p id="mealQuantity">pour 2 repas<p>
+            <ul>
+                <li><img class ="icon" src="image/icons/icons8-rice-bowl-50.png">200g de riz japonais</li>
+                <li><img class ="icon" src="image/icons/icons8-rice-vinegar-50.png">4 cuillerées à soupe de vinaigre de riz</li>
+                <li><img class ="icon" src="image/icons/icons8-tin-can-64.png">1 petite boîte de thon</li>
+                <li><img class ="icon" src="image/icons/icons8-cucumber-50.png">1 morceau de concombre</li>
+                <li><img class ="icon" src="image/icons/icons8-soy-sauce-50.png">Sauce soja</li>
+                <li>Algue nori (facultatif)</li>
+            </ul>
+        <h3>Ustensiles</h3>
+            <ul>
+                <li><img class="icon" src="image/icons/icons8-saucepan-50.png">Casserole</li>
+            </ul>
+    </section>
+    <!-- Etape de la recette -->
+    <section id="recette">
+        <div id="instruction">
+            <div id="temps-prepa">Temps de préparation 30min</div>
+            <div id="temps-cuisson">Temps de cuisson 15min</div>
+        </div>
+        <div id="hr-place"><hr></div>
+        <div id="etape1">
+        <h4>Etape 1 :</h4>
+        <hr>
+        <br>
+        <p>Laver votre riz à l'eau froide, à rincer 2 ou 3 fois. 
+            Faites chauffer sur feu moyen et couvrez dès que l’eau bouillonne. Laissez cuire 5 min surtout sans soulever le couvercle. Baissez le feu et laissez cuire encore 5 min.
+            <br><br>
+            Ôtez la casserole du feu, sans retirer le couvercle et laissez reposer 10 min.
+            <br><br>
+            Placez le riz dans un saladier et ajoutez le vinaigre pour sushis et maki. Laissez refroidir à température ambiante.
+
+        </p>
+        </div>
+        <div id="etape2">
+        <h5>Etape 2 :</h5>
+        <hr>
+        <p>
+            Coupez le concombre en tout petits dès et émiettez le thon. Mélangez-les avec la sauce soja. 
+            <br><br>
+            Mouillez vos mains dans un bol d’eau froide. Prenez une boule de riz (environ 50 g) et compressez-la pour bien tasser le riz. 
+            <br><br>
+            Faites un creux au centre et déposez une cuillerée de garniture au thon, refermez la boule de riz tout autour. Aplatissez la boule formée et donnez-lui une forme de triangle.
+            <br><br>
+            Façonnez d’autres boules de riz avec le reste des ingrédients. Vous devriez pouvoir faire au moins 8 onigiri au thon et concombre
+            <br><br>
+            Servez avec de la sauce soja
+            <br><br>
+            Facultatif: Décorez d’un rectangle de feuille d’algue nori.
+        </p>
+        </div>
+        <div id="hr-place"><hr></div>
+        <!-- Commentaire de la recette -->
+    <div id="commentaires">
+        <div id="commentaireList">
+            <div id="post-comment">
+                <!-- First comment-->
+                <div id="firstComment">
+                    <div id="user">
+                        <div id="user-image"><img src="https://ca.slack-edge.com/T6SG2QGG2-U03TJJCU40P-74266cd58d2e-512"></div>
+                        <div id="user-meta">
+                            <div id="name">Mickael</div>
+                            <div id="day">10 days ago</div>
+                        </div>
+                    </div>
+                    <div id="comment-post">Il est vraiment trop bien ce site, ça m'a motivé à me faire plus souvent à manger. Merci pour les recettes !</div>
+                </div>
+            <!-- Second comment -->
+                <div id="secondComment">
+                    <div id="user">
+                        <div id="user-image"><img src="https://resize.prod.docfr.doc-media.fr/s/1200/ext/eac4ff34/content/2022/7/5/20-coiffures-a-piquer-a-beyonce-3e32633da113fe25.jpeg"></div>
+                        <div id="user-meta">
+                            <div id="name">Beyonce</div>
+                            <div id="day">8 days ago</div>
+                        </div>
+                    </div>
+                    <div id="comment-post"> Thanks to this site, I can make French dishes at home ! Thanks guys !!</div>
+                </div>
+                <!-- Third comment -->
+                <div id="thirdComment">
+                    <div id="user">
+                        <div id="user-image"><img src="https://ca.slack-edge.com/T6SG2QGG2-U059W1UEG86-031db6a84fb6-512"></div>
+                        <div id="user-meta">
+                            <div id="name">Brian</div>
+                            <div id="day">5 days ago</div>
+                        </div>
+                    </div>
+                    <div id="comment-post"> Cool les recettes ! Ce serait sympa d'en mettre toutes les semaines.</div>
+                </div>
+                <!-- Fourth comment -->
+                <div id="fourthComment">
+                    <div id="user">
+                        <div id="user-image"><img src="https://s.yimg.com/ny/api/res/1.2/_G7FIkELfPImzwZDT73N6w--/YXBwaWQ9aGlnaGxhbmRlcjt3PTgxMDtoPTYwNw--/https://media.zenfs.com/fr_FR/News/closer/Polemique-Rihanna-poste-des-photos-d-elle-fumant-des-joints-geants_exact810x609_l.jpg"></div>
+                        <div id="user-meta">
+                            <div id="name">Rihanna</div>
+                            <div id="day">2 days ago</div>
+                        </div>
+                    </div>
+                    <div id="comment-post"> Fuck this I prefer to order Uber Eat 🖕.</div>
+                </div>
+            </div>
+        </div>
+        <!-- Bouton Commmentaire -->
+        <div id="addNoteCommentaire">
+            <!-- Form for the comment -->
+                <form action="" method="post">
+                    <textarea name="comment" id="" cols="30" rows="10"></textarea>
+                    <button id="btnComment">Laisser un commentaire</button>
+                </form>
+        <!-- Annotation avec étoile -->
+            <div id="notes">
+                <div class="rating"><!--
+                --><a href="#5" title="Donner 5 étoiles">★</a><!--
+                --><a href="#4" title="Donner 4 étoiles">★</a><!--
+                --><a href="#3" title="Donner 3 étoiles">★</a><!--
+                --><a href="#2" title="Donner 2 étoiles">★</a><!--
+                --><a href="#1" title="Donner 1 étoile">★</a>
+             </div>
+            </div>
+        </div>
+    </div>
+    </section>
+    </main>
+    <!-- Footer de la page -->
+    <footer>
+
+    </footer>
+    <script src="script.js"></script> 
+</body>
+</html>
