@@ -90,10 +90,6 @@ main {
     top: 0px;
 }
 
-.animateSideBar {
-    transition: all 1s ease-in-out;
-}
-
 h2,
 h3 {
     font-size: clamp(1rem, 2vw, 2rem);
