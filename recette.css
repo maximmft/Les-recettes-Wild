@@ -1,24 +1,3 @@
-/* :root{
-    --main-color: #6B705C;
-    --secondary-color:#A5A58D;
-    --secondary-main-color: #AD4C3F;
-    
-}
-
-@font-face {
-    font-family: "Kanit";
-    src: url(Fonts/Kanit/Kanit-Bold.ttf);
-    src: url(Fonts/Kanit/Kanit-Regular.ttf);
-    src: url(Fonts/Kanit/Kanit-SemiBold.ttf);
-    src: url(Fonts/Kanit/Kanit-Light.ttf);
-}
-
-@font-face {
-    font-family: "Jost";
-    src: url(Fonts/Jost/Jost-Italic-VariableFont_wght.ttf);
-    src: url(Fonts/Jost/Jost-VariableFont_wght.ttf);
-} */
-
 #sideNav {
     height: 100%;
     width: 15rem;
@@ -88,7 +67,7 @@ header {
 }
 
 header h1 {
-    font-size: clamp(1.5rem, 5vw, 3rem);
+    font-size: clamp(2rem, 5vw, 3rem);
     font-family: "Kanit";
     font-weight: bold;
 }
@@ -107,9 +86,10 @@ main {
     color: white;
     align-items: center;
     padding: 30px;
-    padding-top: 30px;
-    padding-top: 5%;
-    
+    padding-top: 10%;
+    top: 0px;
+}
+
 }
 
 h2,
@@ -124,7 +104,7 @@ h3 {
 
 #sideBar ul {
     margin-top: 10px;
-    
+
 }
 
 #sideBar ul li {
@@ -133,7 +113,7 @@ h3 {
     padding: 10px;
     font-size: clamp(0.5rem, 2vw, 1rem);
     font-family: "Jost";
-   
+
 }
 
 #mealQuantity{
@@ -146,7 +126,8 @@ h3 {
 #recette {
     display: flex;
     flex-direction: column;
-    margin-left: 5%;
+    margin-left: 35%;
+    width: 75%;
 }
 
 .iconRestriction{
@@ -159,7 +140,7 @@ h3 {
     display: none ;
 }
 
-#instruction{
+#instruction {
     display: flex;
     flex-direction: row;
     font-family: "Kanit";
@@ -169,7 +150,7 @@ h3 {
     margin: 100px;
 }
 
-#hr-place hr{
+#hr-place hr {
     width: 100%;
     height: 2%;
     background-color: var(--secondary-color);
@@ -206,29 +187,32 @@ p {
     
 }
 
-#commentaires{
+#commentaires {
     display: flex;
     flex-direction: column;
     margin-bottom: 20px;
     margin-top: 20px;
 }
 
-#commentaireList{
-    /* display: flex;
-    flex-direction: column; */
+#commentaireList {
     block-size: 120px;
-    height: 230px;
     background-color: var(--main-color);
+    height: auto;
     border-radius: 20px;
     margin-bottom: 10px;
+    padding: 0.5% 0%;
 }
 
-#post-comment{
+#post-comment {
     display: flex;
     flex-direction: column;
 }
 
-#firstComment, #secondComment, #thirdComment, #fourthComment{
+#firstComment,
+#secondComment,
+#thirdComment,
+#fourthComment,
+#newComment {
     display: flex;
     flex-direction: row;
     block-size: 100px;
@@ -241,22 +225,41 @@ p {
     padding: 5px;
 }
 
-#user{
+#newComment {
+    resize: inherit;
+
+}
+#newComment:focus-visible {
+    box-shadow: 0 0 0 1px var(--secondary-main-color);
+    outline: none;
+}
+
+#user {
     display: flex;
     flex-direction: row;
     font-family: "Jost";
     font-size: 10px;
     margin: 3px;
+    margin-right: 4%;
 }
 
-#user-image img{
+#user-image img {
     width: 30px;
     height: 30px;
     border-radius: 20px;
     margin-right: 5px;
 }
 
-#comment-post{
+#user-meta {
+    width: 70px;
+}
+
+#day{
+    display: flex;
+    flex-direction: row;
+}
+
+#comment-post {
     display: flex;
     justify-content: center;
     font-family: "Jost";
@@ -264,28 +267,28 @@ p {
     margin-left: 10px;
 }
 
-#addNoteCommentaire{
+#addNoteCommentaire {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
-#btnComment{
+#btnComment {
     background-color: var(--secondary-color);
     border-radius: 20px;
     width: 200px;
 }
 
-#notes{
+#notes {
     background-color: var(--secondary-color);
     border-radius: 20px;
     width: 100px;
 }
 
-.rating{
-   display: flex;
-   flex-direction: row-reverse; 
-   justify-content: space-around;
+.rating {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
 }
 
 .rating a {
@@ -294,15 +297,15 @@ p {
     text-decoration: none;
     /* font-size: 3em; */
     transition: color .4s;
- }
+}
 
- .rating a:hover,
- .rating a:focus,
- .rating a:hover ~ a,
- .rating a:focus ~ a {
+.rating a:hover,
+.rating a:focus,
+.rating a:hover~a,
+.rating a:focus~a {
     color: white;
     cursor: pointer;
- }
+}
 
 @media only screen and (max-width : 900px) {
     
@@ -366,7 +369,7 @@ p {
         padding-bottom: 1rem;
         font-weight: bold;
     }
-    }
+    
 
     #etape1, #etape2 {
         margin-left: 5%;
@@ -375,4 +378,6 @@ p {
     #commentaireList {
         margin: 0 1rem;
     }
+
+}
 
