@@ -227,10 +227,10 @@ p {
 
 #newComment {
     resize: inherit;
+    border: none;
 
 }
 #newComment:focus-visible {
-    box-shadow: 0 0 0 1px var(--secondary-main-color);
     outline: none;
 }
 
