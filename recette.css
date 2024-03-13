@@ -181,6 +181,15 @@ hr {
     border: none;
 }
 
+#hr_comment{
+        width: 80%;
+        height: 1px;
+        background-color: var(--main-color);
+        margin: 5rem;
+        border: none;
+}
+
+
 p {
     font-family: "Jost";
     font-size: clamp(1rem, 2vw, 1.5rem);
