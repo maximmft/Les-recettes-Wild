@@ -96,17 +96,20 @@ header h1 {
 main {
     display: flex;
     flex-direction: row;
+    margin-right: 10%;
 }
 
 #sideBar {
     display: flex;
     flex-direction: column;
     background-color: var(--main-color);
-    height: 900px;
     width: 20%;
     color: white;
     align-items: center;
+    padding: 30px;
+    padding-top: 30px;
     padding-top: 10%;
+    
 }
 
 h2,
@@ -137,12 +140,30 @@ h3 {
     margin-left: 5%;
 }
 
+#instruction{
+    display: flex;
+    flex-direction: row;
+    font-family: "Kanit";
+    font-size: 20px;
+    color: var(--secondary-main-color);
+    justify-content: space-around;
+    margin: 100px;
+}
+
+#hr-place hr{
+    width: 100%;
+    height: 2%;
+    background-color: var(--secondary-color);
+    border: none;
+}
+
 #etape1,
 #etape2 {
     display: flex;
     flex-direction: column;
     justify-content: center;
     height: 30%;
+    margin-bottom: 40px;
 }
 
 h4,
@@ -164,3 +185,100 @@ p {
     font-family: "Jost";
     font-size: 16px;
 }
+
+#commentaires{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+#commentaireList{
+    /* display: flex;
+    flex-direction: column; */
+    block-size: 120px;
+    height: 230px;
+    background-color: var(--secondary-color);
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+
+#post-comment{
+    display: flex;
+    flex-direction: column;
+}
+
+#firstComment, #secondComment, #thirdComment, #fourthComment{
+    display: flex;
+    flex-direction: row;
+    block-size: 100px;
+    height: 40px;
+    background-color: var(--main-color);
+    border-radius: 20px;
+    margin: 5px;
+    margin-bottom: 1px;
+    padding: 5px;
+}
+
+#user{
+    display: flex;
+    flex-direction: row;
+    font-family: "Jost";
+    font-size: 10px;
+    margin: 3px;
+}
+
+#user-image img{
+    width: 30px;
+    height: 30px;
+    border-radius: 20px;
+    margin-right: 5px;
+}
+
+#comment-post{
+    display: flex;
+    justify-content: center;
+    font-family: "Jost";
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+#addNoteCommentaire{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#btnComment{
+    background-color: var(--secondary-color);
+    border-radius: 20px;
+    width: 200px;
+}
+
+#notes{
+    background-color: var(--secondary-color);
+    border-radius: 20px;
+    width: 100px;
+}
+
+.rating{
+   display: flex;
+   flex-direction: row-reverse; 
+   justify-content: space-around;
+}
+
+.rating a {
+    float: right;
+    color: #aaa;
+    text-decoration: none;
+    /* font-size: 3em; */
+    transition: color .4s;
+ }
+
+ .rating a:hover,
+ .rating a:focus,
+ .rating a:hover ~ a,
+ .rating a:focus ~ a {
+    color: white;
+    cursor: pointer;
+ }
