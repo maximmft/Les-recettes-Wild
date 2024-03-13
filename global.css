@@ -57,6 +57,7 @@
     display: block;
     font-family: "jost";
 
+
 }
 
 #sideNav ul li a:hover{
@@ -107,3 +108,4 @@ footer a {
     font-weight: regular;
     font-size: clamp(0.5rem, 2.5vw, 1.5rem);
 }
+

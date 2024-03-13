@@ -82,7 +82,7 @@ main {
     display: flex;
     flex-direction: column;
     background-color: var(--main-color);
-    width: 20%;
+    width: 30rem;
     color: white;
     align-items: center;
     padding: 30px;
@@ -90,18 +90,16 @@ main {
     top: 0px;
 }
 
-.animateSideBar {
-    transition: all 1s ease-in-out;
 }
 
 h2,
 h3 {
     font-size: clamp(1rem, 2vw, 2rem);
     font-family: "Jost";
-    font-weight: 500;
     display: flex;
     justify-content: center;
-    padding-bottom: 20px;
+    padding-top: 3rem;
+    border-bottom: solid 1px white;
 }
 
 #sideBar ul {
@@ -113,9 +111,16 @@ h3 {
     display: flex;
     flex-direction: row;
     padding: 10px;
-    font-size: 0.8rem;
+    font-size: clamp(0.5rem, 2vw, 1rem);
     font-family: "Jost";
 
+}
+
+#mealQuantity{
+    font-size: 1rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    
 }
 
 #recette {
@@ -125,11 +130,21 @@ h3 {
     width: 75%;
 }
 
+.iconRestriction{
+    height: 2rem;
+    margin-bottom: 1rem;
+    }
+
+.icon{
+    height: 2rem;
+    display: none ;
+}
+
 #instruction {
     display: flex;
     flex-direction: row;
     font-family: "Kanit";
-    font-size: 20px;
+    font-size: clamp(1rem, 2vw, 1.5rem);
     color: var(--secondary-main-color);
     justify-content: space-around;
     margin: 100px;
@@ -168,7 +183,8 @@ hr {
 
 p {
     font-family: "Jost";
-    font-size: 16px;
+    font-size: clamp(1rem, 2vw, 1.5rem);
+    
 }
 
 #commentaires {
@@ -180,8 +196,8 @@ p {
 
 #commentaireList {
     block-size: 120px;
+    background-color: var(--main-color);
     height: auto;
-    background-color: var(--secondary-color);
     border-radius: 20px;
     margin-bottom: 10px;
     padding: 0.5% 0%;
@@ -201,7 +217,7 @@ p {
     flex-direction: row;
     block-size: 100px;
     height: 40px;
-    background-color: var(--main-color);
+    background-color: var(--secondary-color);
     color: white;
     border-radius: 20px;
     margin: 5px;
@@ -290,3 +306,78 @@ p {
     color: white;
     cursor: pointer;
 }
+
+@media only screen and (max-width : 900px) {
+    
+    main{
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+    }
+
+    #recette {
+    margin: 0;
+    }
+
+    .icon{
+        height: 1.5rem;
+        display: block;
+    }
+    
+    .iconRestriction{
+    margin: 1rem;
+    }
+
+    .rating {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    #sideBar ul li {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    #sideBar ul {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        flex-wrap: wrap;
+    
+    }
+
+    #sideBar {
+    width: 100%;
+    padding: 0;
+       
+    }
+
+    #instruction {
+        display: flex;
+        flex-direction: row;
+        font-family: "Kanit";
+        font-size: clamp(1rem, 2vw, 1.5rem);
+        color: var(--secondary-main-color);
+        justify-content: space-around;
+        text-align: center;
+        margin: 2rem;
+        border-bottom: solid 1px;
+        padding-bottom: 1rem;
+        font-weight: bold;
+    }
+    
+
+    #etape1, #etape2 {
+        margin-left: 5%;
+    }
+
+    #commentaireList {
+        margin: 0 1rem;
+    }
+
+}
+
