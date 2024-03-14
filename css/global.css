@@ -6,29 +6,29 @@
 
 @font-face {
     font-family: "Kanit";
-    src: url(Fonts/Kanit/Kanit-Bold.ttf);
+    src: url(/Fonts/Kanit/Kanit-Bold.ttf);
     font-weight: bold;
 }
 @font-face {
     font-family: "Kanit";
-    src: url(Fonts/Kanit/Kanit-Regular.ttf);
+    src: url(/Fonts/Kanit/Kanit-Regular.ttf);
     font-weight: regular;
 }
 @font-face {
     font-family: "Kanit";
-    src: url(Fonts/Kanit/Kanit-SemiBold.ttf);
+    src: url(/Fonts/Kanit/Kanit-SemiBold.ttf);
     font-weight: semi-bold;
 }
 @font-face {
     font-family: "Kanit";
-    src: url(Fonts/Kanit/Kanit-Light.ttf);
+    src: url(/Fonts/Kanit/Kanit-Light.ttf);
     font-weight: light;
 }
 
 @font-face {
     font-family: "Jost";
-    src: url(Fonts/Jost/Jost-Italic-VariableFont_wght.ttf);
-    src: url(Fonts/Jost/Jost-VariableFont_wght.ttf);
+    src: url(/Fonts/Jost/Jost-Italic-VariableFont_wght.ttf);
+    src: url(/Fonts/Jost/Jost-VariableFont_wght.ttf);
 }
 
 #burger-icon{
