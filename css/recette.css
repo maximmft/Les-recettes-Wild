@@ -54,27 +54,22 @@
 header {
     display: flex;
     text-align: center;
+    background-image: url(image/lunchbox_dejeuner.jpg);
     width: 100%;
     height: 300px;
     justify-content: center;
     align-items: center;
+    color: white;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    /* filter: drop-shadow(0px 10px 24px #000); */
     box-shadow: -1px 8px 8px -2px #A5A58D;
-}
-
-#onigiriHeader{
-    background-image: url(image/onigiri\ -\ blurred.jpg);
-        
 }
 
 header h1 {
     font-size: clamp(2rem, 5vw, 3rem);
     font-family: "Kanit";
     font-weight: bold;
-    color: white;
-    
 }
 
 main {
@@ -95,11 +90,8 @@ main {
     top: 0px;
 }
 
-<<<<<<< HEAD
-=======
 
 
->>>>>>> 1d3e535253b22d072dcec4063a73accc2ee1ecae
 h2,
 h3 {
     font-size: clamp(1rem, 2vw, 2rem);
@@ -165,7 +157,8 @@ h3 {
     border: none;
 }
 
-.etape {
+#etape1,
+#etape2 {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -187,15 +180,6 @@ hr {
     margin-bottom: 3rem;
     border: none;
 }
-
-#hr_comment{
-        width: 80%;
-        height: 1px;
-        background-color: var(--main-color);
-        margin: 5rem;
-        border: none;
-}
-
 
 p {
     font-family: "Jost";
@@ -243,10 +227,10 @@ p {
 
 #newComment {
     resize: inherit;
-    border: none;
 
 }
 #newComment:focus-visible {
+    box-shadow: 0 0 0 1px var(--secondary-main-color);
     outline: none;
 }
 
@@ -333,7 +317,6 @@ p {
 
     #recette {
     margin: 0;
-    width: 100%;
     }
 
     .icon{
@@ -396,8 +379,5 @@ p {
         margin: 0 1rem;
     }
 
-
-    #hr_separation_comment{
-        display: flex;
-    }
 }
+
