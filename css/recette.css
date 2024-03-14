@@ -54,16 +54,20 @@
 header {
     display: flex;
     text-align: center;
-    background-image: url(/image/lunchbox_dejeuner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     width: 100%;
     height: 300px;
     justify-content: center;
     align-items: center;
     color: white;
-    background-repeat: no-repeat;
-    background-size: cover;
     /* filter: drop-shadow(0px 10px 24px #000); */
     box-shadow: -1px 8px 8px -2px #A5A58D;
+}
+
+#onigiriHeader{
+    background-image: url(/image/Onigiri/onigiri\ -\ blurred.jpg);   
 }
 
 header h1 {
@@ -157,8 +161,7 @@ h3 {
     border: none;
 }
 
-#etape1,
-#etape2 {
+.etape {
     display: flex;
     flex-direction: column;
     justify-content: center;
