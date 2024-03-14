@@ -5,7 +5,7 @@ body{
 #headerSemainier{
     text-align: center;
     min-height: 350px;
-    background-image: url("image/background_semainier.jpg");
+    background-image: url("/image/Semainier/background_semainier.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
@@ -89,24 +89,24 @@ hr{ width: 60%;
 }
 
 #lundi {
-    background-image: url(image/onigiri\ -\ blurred.jpg);
+    background-image: url(/image/Onigiri/onigiri\ -\ blurred.jpg);
     
 }
 
 #mardi {
-    background-image: url(image/onigiri.jpg);
+    background-image: url(/image/Onigiri/onigiri\ -\ blurred.jpg);
 }
 
 #mercredi {
-    background-image: url(image/onigiri.jpg);
+    background-image: url(/image/Onigiri/onigiri\ -\ blurred.jpg);
 }
 
 #jeudi {
-    background-image: url(image/onigiri.jpg);
+    background-image: url(/image/Onigiri/onigiri\ -\ blurred.jpg);
 }
 
 #vendredi {
-    background-image: url(image/onigiri.jpg);
+    background-image: url(/image/Onigiri/onigiri\ -\ blurred.jpg);
 }
 
 footer {
