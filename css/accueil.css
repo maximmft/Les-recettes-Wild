@@ -1,7 +1,7 @@
 /* HEADER */
 
 header {
-    background-image: url("image/image-accueil.jpg");
+    background-image: url("/image/Accueil/image-accueil.jpg");
     height: 800px;
     min-height: 350px;
     background-repeat: no-repeat;
