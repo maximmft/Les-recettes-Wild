@@ -66,6 +66,8 @@ article img:hover{
     height: 200px;
     width: 200px;
     position: relative;
+    display: flex;
+    justify-content: center;
 }
 
 .slider__nav{
@@ -75,15 +77,16 @@ article img:hover{
 .slider__content{
     height: 50%;
     width: 50%;
-    display: flex;
     overflow: hidden;
     scroll-behavior: smooth;
-
 }
 
 .slider__content__item{
     height: 100%;
     min-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .slider__content__item img{
