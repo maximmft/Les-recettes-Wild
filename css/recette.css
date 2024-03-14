@@ -70,6 +70,10 @@ header {
     background-image: url(/image/Onigiri/onigiri\ -\ blurred.jpg);   
 }
 
+#chiliHeader{
+    background-image: url(/image/Chili/pexels-photo-15881322.jpeg);
+}
+
 header h1 {
     font-size: clamp(2rem, 5vw, 3rem);
     font-family: "Kanit";
@@ -114,7 +118,7 @@ h3 {
 #sideBar ul li {
     display: flex;
     flex-direction: row;
-    padding: 10px;
+    padding: 5px;
     font-size: clamp(0.5rem, 2vw, 1rem);
     font-family: "Jost";
 
@@ -152,6 +156,7 @@ h3 {
     color: var(--secondary-main-color);
     justify-content: space-around;
     margin: 100px;
+    text-align: center;
 }
 
 #hr-place hr {
@@ -165,7 +170,6 @@ h3 {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 30%;
     margin-bottom: 40px;
 }
 
@@ -189,6 +193,7 @@ p {
     font-size: clamp(1rem, 2vw, 1.5rem);
     
 }
+
 
 #commentaires {
     display: flex;
@@ -320,6 +325,8 @@ p {
 
     #recette {
     margin: 0;
+    width: 80%;
+    margin-left: 2rem;
     }
 
     .icon{
@@ -363,7 +370,7 @@ p {
         display: flex;
         flex-direction: row;
         font-family: "Kanit";
-        font-size: clamp(1rem, 2vw, 1.5rem);
+        font-size: clamp(0.8rem, 2vw, 1.5rem);
         color: var(--secondary-main-color);
         justify-content: space-around;
         text-align: center;
@@ -374,9 +381,6 @@ p {
     }
     
 
-    #etape1, #etape2 {
-        margin-left: 5%;
-    }
 
     #commentaireList {
         margin: 0 1rem;
