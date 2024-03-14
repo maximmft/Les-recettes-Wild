@@ -51,19 +51,25 @@
         <section id="featured-recipes">
             <hr/>
             <h2>Nos recettes à la une</h2>
-            <div id="article-container">
-            <article>
+            <div id="slider">
+                <div class="slider__nav">  
+                    <button class="slider__nav__button slider__nav__button--previous">Précédent</button>
+                    <button class="slider__nav__button slider__nav__button--next">Suivant</button>
+                </div>
+                <div class="slider__content">
+            <article class="slider__content__item">
                 <a href="recette1.html"><img src="image/onigiri.jpg" alt="onigiri"></a>
                 <p>Lorem ipsum</p>
             </article>
-            <article>
-                <a href="recipe2.html"><img src="image/onigiri.jpg" alt="onigiri"></a>
+            <article class="slider__content__item">
+                <a href="recipe2.html"><img src="image/lunchbox_dejeuner.jpg" alt="onigiri"></a>
                 <p>Lorem ipsum</p>
             </article>
-            <article>
+            <article class="slider__content__item">
                 <a href="recipe3.html"><img src="image/onigiri.jpg" alt="onigiri"></a>
                 <p>Lorem ipsum</p>
             </article>
+                </div>
             </div>
         </section>
         <hr/>
@@ -76,7 +82,7 @@
         <p>Made with ❤️ by Les TechnoPoufs</p>
         <a href="#">Nous contacter</a>
     </footer>
-    <script src="script.js"></script>
+    <script src="accueil.js"></script>
 </body>
 
 

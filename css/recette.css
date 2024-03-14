@@ -95,8 +95,11 @@ main {
     top: 0px;
 }
 
+<<<<<<< HEAD
+=======
 
 
+>>>>>>> 1d3e535253b22d072dcec4063a73accc2ee1ecae
 h2,
 h3 {
     font-size: clamp(1rem, 2vw, 2rem);
