@@ -1,3 +1,5 @@
+/* HEADER */
+
 header {
     background-image: url("image/image-accueil.jpg");
     height: 800px;
@@ -27,6 +29,7 @@ header h2 {
     margin-bottom: 20%;
 }
 
+/* LES RECETTES A LA UNE */
 #featured-recipes h2 {
     font-size: clamp(1.5rem, 3vw, 3rem);
     text-align: center;
@@ -36,7 +39,7 @@ header h2 {
     font-weight: semi-bold;
 }
 
-#article-container {
+/* #article-container {
     display: flex;
     justify-content: space-around;
 }
@@ -52,6 +55,42 @@ article img {
     height: 20rem;
     border-radius: 4rem;
     object-fit : cover;
+    transition: all 0.3s linear;
+}
+
+article img:hover{
+    box-shadow: 0px 0px 10px var(--secondary-color);
+} */
+
+.slider {
+    height: 200px;
+    width: 200px;
+    position: relative;
+}
+
+.slider__nav{
+    position: absolute;
+}
+
+.slider__content{
+    height: 50%;
+    width: 50%;
+    display: flex;
+    overflow: hidden;
+    scroll-behavior: smooth;
+
+}
+
+.slider__content__item{
+    height: 100%;
+    min-width: 100%;
+}
+
+.slider__content__item img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 4rem;
 }
 
 article p {
@@ -63,24 +102,31 @@ article p {
     font-family: "Jost";
 }
 
+/* DECOUVRIR NOTRE SEMAINIER */
+
 #button-container {
     text-align: center;
     padding: 60px 0px;
 }
 
-button {
-    background-color: var(--secondary-main-color);
-    border: none;
-    padding: 20px 150px;
-    border-radius: 20px;
-    box-shadow: 10px 5px 5px var(--secondary-color);
-}
-
-button a {
+.button {
     font-size: clamp(0.5rem, 1.5vw, 1rem);
     color: white;
     text-decoration: none;
     font-family: "Jost";
+    background-color: var(--secondary-main-color);
+    border: none;
+    padding: 20px 150px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px var(--secondary-color);
+    cursor: pointer;
+    transition: all 0.3s linear;
+
+}
+
+.button:hover {
+    box-shadow: 0px 0px 20px var(--secondary-color);
+    padding: 30px 160px;
 }
 
 hr {
@@ -88,6 +134,8 @@ hr {
     width: 60%;
     margin: 6rem auto;
 }
+
+/* FOOTER */
 
 footer {
     background-color: var(--main-color);

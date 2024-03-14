@@ -18,7 +18,7 @@ function closeNav() {
 
 // Begin Section Side Bar
 
-console.log(document.body.clientWidth);
+
 if (document.body.clientWidth > 900){
 
 (function () {
@@ -65,3 +65,4 @@ if (document.body.clientWidth > 900){
 })()
 };
 // End Section Side Bar
+
