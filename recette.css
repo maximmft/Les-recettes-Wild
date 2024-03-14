@@ -82,7 +82,7 @@ main {
     display: flex;
     flex-direction: column;
     background-color: var(--main-color);
-    width: 30rem;
+    width:20%;
     color: white;
     align-items: center;
     padding: 30px;
@@ -90,6 +90,11 @@ main {
     top: 0px;
 }
 
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> 1d3e535253b22d072dcec4063a73accc2ee1ecae
 h2,
 h3 {
     font-size: clamp(1rem, 2vw, 2rem);
@@ -179,6 +184,15 @@ hr {
     border: none;
 }
 
+#hr_comment{
+        width: 80%;
+        height: 1px;
+        background-color: var(--main-color);
+        margin: 5rem;
+        border: none;
+}
+
+
 p {
     font-family: "Jost";
     font-size: clamp(1rem, 2vw, 1.5rem);
@@ -225,10 +239,10 @@ p {
 
 #newComment {
     resize: inherit;
+    border: none;
 
 }
 #newComment:focus-visible {
-    box-shadow: 0 0 0 1px var(--secondary-main-color);
     outline: none;
 }
 
@@ -315,6 +329,7 @@ p {
 
     #recette {
     margin: 0;
+    width: 100%;
     }
 
     .icon{
