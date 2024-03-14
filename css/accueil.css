@@ -62,38 +62,66 @@ article img:hover{
     box-shadow: 0px 0px 10px var(--secondary-color);
 } */
 
-.slider {
-    height: 200px;
-    width: 200px;
-    position: relative;
-    display: flex;
-    justify-content: center;
+#slider {
+    min-height: auto;
+    width: auto;
+    position : relative;
 }
 
-.slider__nav{
+.slider-nav-button--previous{
+    left: 10%;
+}
+
+.slider-nav-button--next{
+    right : 10%;
+}
+    
+.slider-nav-button{
     position: absolute;
+    top: 50%;
+    border : none;
+    color : var(--main-color);
+    background-color: transparent;
+    cursor: pointer;
 }
 
-.slider__content{
-    height: 50%;
-    width: 50%;
+.slider-nav-button:hover{
+    transform : scale(1.1);
+}
+
+.slider-nav-button svg{
+    width: 50px;
+}
+
+.slider-content{
+    width : 100%;
+    height: 800px;
     overflow: hidden;
     scroll-behavior: smooth;
+    position : relative;
+    display: inline-block;
 }
 
-.slider__content__item{
-    height: 100%;
-    min-width: 100%;
+.slider-content-item{
+    position : absolute;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.slider__content__item img{
-    height: 100%;
-    width: 100%;
+.slider-content-item img{
+    width : 100%;
     object-fit: cover;
     border-radius: 4rem;
+}
+
+.slider-content-item2 {
+    left: 100%;
+}
+
+.slider-content-item3 {
+    left: 200%;
 }
 
 article p {
@@ -112,7 +140,7 @@ article p {
     padding: 60px 0px;
 }
 
-.button {
+.button-semainier {
     font-size: clamp(0.5rem, 1.5vw, 1rem);
     color: white;
     text-decoration: none;
@@ -127,7 +155,7 @@ article p {
 
 }
 
-.button:hover {
+.button-semainier:hover {
     box-shadow: 0px 0px 20px var(--secondary-color);
     padding: 30px 160px;
 }
