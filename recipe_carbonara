@@ -4,7 +4,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <link rel="stylesheet" href="css/global.css">
     <link rel="stylesheet" href="css/recette.css">
     <link rel="stylesheet" href="css/reset.css">
@@ -34,19 +33,24 @@
             </span>
         </a>
         <img src="image/logo.svg">
-        <img src="image/icons8-loupe-64.png">
+        <span class="material-symbols-outlined">
+            search
+        </span>
     </nav>
     <!-- Header de la recette -->
-    <header id="wrapHeader">
-        <h1>Wrap poulet curry</h1>
+    <header id="carbonaraHeader">
+        <h1>Pâtes carbonara
+            <br>à l'italienne
+        </h1>
     </header>
     <!-- Main de la recette -->
     <main>
         <!-- Side Bar de la recette -->
         <section id="sideBar">
             <div id="icons">
-                <img class="iconRestriction" src="image/icons/Restriction/icons8-chicken-64.png"></img>
+                <img class="iconRestriction" src="image/Carbonara/icons8-cuts-of-pork-80.png"></img>
                 <img class="iconRestriction" src="image/icons/Restriction/icons8-gluten-30.png"></img>
+                <!-- <img class="iconRestriction" src="/image/icons/Restriction/icons8-lactose-free-50.png"><img> -->
             </div>
             <div>
                 <div class="rating"><!--
@@ -60,26 +64,22 @@
                 <p id="mealQuantity">pour 2 repas
                 <p>
                 <ul>
-                    <li><img class="icon" src="image/Wrap/icons8-tortilla-64.png">2 tortillas de blé</li>
-                    <li><img class="icon" src="image/Restriction/icons8-chicken-64.png">1 filet de poulet</li>
-                    <li><img class="icon" src="image/Wrap/icons8-carrot-50.png">1 carotte</li>
-                    <li><img class="icon" src="image/Wrap/icons8-lettuce-50.png">4 feuilles de salade</li>
-                    <li><img class="icon" src="image/icons/icons8-cucumber-50.png">1 demi concombre</li>
-                    <li><img class="icon" src="image/Wrap/icons8-cream-50.png">100g de fromage blanc</li>
-                    <li><img class="icon" src="image/Wrap/icons8-spice-100.png">1 cuillère à café de curry</li>
-                    <li><img class="icon" src="image/Wrap/icons8-cheese-50.png">gruyère rapé</li>
-                    <li><img class="icon" src="image/Wrap/icons8-spice-100.png">sel</li>
+                    <li><img class="icon" src="image/Carbonara/icons8-pasta-66.png">500g de pâtes</li>
+                    <li><img class="icon" src="image/Carbonara/icons8-cuts-of-pork-80.png">200g de lardon</li>
+                    <li><img class="icon" src="image/Carbonara/icons8-eggs-50.png">2 oeufs</li>
+                    <li><img class="icon" src="image/Carbonara/icons8-sunny-side-up-eggs-64.png">4 jaune d'oeufs</li>
+                    <li><img class="icon" src="image/Wrap/icons8-cheese-50.png">100g de parmesan</li>
                     <li><img class="icon" src="image/Wrap/icons8-spice-100.png">poivre</li>
                 </ul>
                 <h3>Ustensiles</h3>
                 <ul>
-                    <li><img class="icon" src="../image/icons/icons8-saucepan-50.png">Casserole</li>
+                    <li><img class="icon" src="image/icons/icons8-saucepan-50.png">Casserole</li>
                 </ul>
         </section>
         <!-- Etape de la recette -->
         <section id="recette">
             <div id="instruction">
-                <div id="temps-prepa">Temps de préparation 25min</div>
+                <div id="temps-prepa">Temps de préparation 5min</div>
                 <div id="temps-cuisson">Temps de cuisson 10min</div>
             </div>
             <div id="hr-place">
@@ -89,22 +89,27 @@
                 <h4>Etape 1 :</h4>
                 <hr>
                 <br>
-                <p>Mélangez le fromage blanc avec le curry. Ajoutez du sel et du poivre à votre convenance.
-                    <br>
-                    Coupez le poulet en lamelles, faites le revenir à la poêle.
-                    <br>
-                    Lavez, épluchez et coupez en bâtonnets le concombre et la carotte.
+                <p>Faites rissoler les lardons à sec, à feu vif, jusqu'à ce qu'ils dorent. Réserver au chaud sans jeter la graisse. 
+                <br>
+                <br>
+                Faites cuire les pâtes al dente dans un grand volume d'eau bouillante salée. 
+                <br>
+                <br>
+                Pendant ce temps, battez les oeufs entiers et les jaunes avec la moitié du mélange parmesan rapé. Poivrez généreusement. 
                 </p>
             </div>
             <div class="etape">
                 <h5>Etape 2 :</h5>
                 <hr>
                 <p>
-                    Faites chauffer les wraps au micro-ondes si vous le souhaitez.
-                    <br> Étalez la sauce sur les wrap, ajoutez sur chacun une feuille de salade, des bâtonnets de
+                    Egouttez les pâtes en prenant soin de garder 1 dl environ d'eau de cuisson au fond de la marmite. 
+                    <br>
+                    <br>Reversez les pâtes dans la marmite chaude, ajoutez la pancetta et sa graisse, puis le mélange oeuf-fromage et remuez vivement (hors du feu) : avec la chaleur, les oeufs et l'eau de cuisson vont former une sauce onctueuse. 
+                    <br> 
+                    <br>Étalez la sauce sur les wrap, ajoutez sur chacun une feuille de salade, des bâtonnets de
                     légumes et des lamelles de poulet, puis du gruyère râpé.
                     <br>
-                    Roulez le tout !
+                    Ajoutez alors le reste de fromage râpé, mélangez une dernière fois et servez immédiatement. 
                 </p>
             </div>
             <!-- Commentaire de la recette -->
@@ -194,6 +199,7 @@
 
     </footer>
     <script src="javascript/script.js"></script>
+    <!-- <script src="recette.js"></script> -->
 </body>
 
 </html>
