@@ -370,6 +370,7 @@ p {
         align-items: center;
         text-align: center;
         flex-wrap: wrap;
+        margin-bottom: 2rem;
 
     }
 
