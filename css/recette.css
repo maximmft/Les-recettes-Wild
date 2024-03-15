@@ -301,13 +301,13 @@ p {
         justify-content: space-evenly;
     }
 
-    #sideBar ul li {
+    #side-bar ul li {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
 
-    #sideBar ul {
+    #side-bar ul {
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
@@ -319,7 +319,7 @@ p {
 
     }
 
-    #sideBar {
+    #side-bar {
         width: 100%;
         padding: 0;
 
@@ -344,4 +344,5 @@ p {
         margin: 0 1rem;
     }
 
+    
 }
