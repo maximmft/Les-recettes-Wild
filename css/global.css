@@ -112,3 +112,9 @@ footer a {
     font-size: clamp(0.5rem, 2.5vw, 1.5rem);
 }
 
+@media only screen and (max-width : 768px){
+
+    #navBar img {
+        height: 2rem;
+    }
+}
