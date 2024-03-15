@@ -5,7 +5,7 @@ body{
 #headerSemainier{
     text-align: center;
     min-height: 350px;
-    background-image: url("/image/Semainier/background_semainier.jpg");
+    background-image: url("../image/Semainier/background_semainier.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
@@ -33,7 +33,7 @@ header h2 {
 #weekDate p{
     color: white;
     width: 100%;
-    font-size: clamp(1.5rem, 3vw, 2rem);
+    font-size: clamp(1rem, 3vw, 2rem);
     height: 8rem;
     background-color: var(--secondary-main-color);
     display: flex;
@@ -89,24 +89,25 @@ hr{ width: 60%;
 }
 
 #lundi {
-    background-image: url(/image/Onigiri/onigiri\ -\ blurred.jpg);
+    background-image: url(../image/Onigiri/onigiri\ -\ blurred.jpg);
     
 }
 
 #mardi {
-    background-image: url(/image/Onigiri/onigiri\ -\ blurred.jpg);
+    background-image: url(../image/Carbonara/pasta-712664_640-modified.png);
 }
 
 #mercredi {
-    background-image: url(/image/Onigiri/onigiri\ -\ blurred.jpg);
+    background-image: url(../image/Chili/chili-square.jpeg);
+    
 }
 
 #jeudi {
-    background-image: url(/image/Onigiri/onigiri\ -\ blurred.jpg);
+    background-image: url(../image/Pasta/pasta-7236369_640-modified.png);
 }
 
 #vendredi {
-    background-image: url(/image/Onigiri/onigiri\ -\ blurred.jpg);
+    background-image: url(../image/Wrap/wrap-poulet-ranch-modified.png);
 }
 
 footer {
