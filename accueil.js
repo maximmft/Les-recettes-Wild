@@ -13,9 +13,6 @@ sliderNavButtonPrevious.addEventListener("click", function(){
 
 sliderNavButtonNext.addEventListener("click", function(){
   const widthSlider = document.querySelector(".slider-content").offsetWidth;
-  
-  // si dernière image : revenir au début.
-  // sinon, continnuer à slider sur la gauche.
     document.querySelector(".slider-content").scrollLeft += widthSlider;
 });
 
