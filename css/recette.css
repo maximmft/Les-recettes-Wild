@@ -108,6 +108,7 @@ main {
     padding: 30px;
     padding-top: 10%;
     top: 0px;
+    z-index: 1;
 }
 
 
