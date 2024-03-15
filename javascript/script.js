@@ -1,6 +1,7 @@
-const sideNav = document.getElementById("sideNav");
+const sideNav = document.getElementById("side-nav");
 const openBtn = document.getElementById("openBtn");
 const closeBtn = document.getElementById("closeBtn");
+const overlay = document.querySelector(".overlay");
 
 openBtn.onclick = openNav;
 closeBtn.onclick = closeNav;
@@ -8,11 +9,13 @@ closeBtn.onclick = closeNav;
 /* Set the width of the side navigation to 250px */
 function openNav() {
   sideNav.classList.add("active");
+  overlay.style.display = "block";
 }
 
 /* Set the width of the side navigation to 0 */
 function closeNav() {
   sideNav.classList.remove("active");
+  overlay.style.display = "none";
 }
 
 
@@ -43,7 +46,7 @@ if (document.body.clientWidth > 900){
           
           stickySideBar.style.position = "fixed";
           stickySideBar.style.top = "0px";
-          stickySideBar.style.zIndex = 999;
+          stickySideBar.style.zIndex = 3;
           stickySideBar.style.height = "100%";
           stickySideBar.style.padding = "30px";
           stickySideBar.style.paddingTop = "10%";
