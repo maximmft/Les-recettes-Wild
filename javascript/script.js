@@ -1,3 +1,24 @@
+
+// Slider in welcome page
+
+const sliderNavButtonPrevious = document.querySelector(".slider-nav-button--previous");
+const sliderNavButtonNext = document.querySelector(".slider-nav-button--next");
+
+
+
+sliderNavButtonPrevious.addEventListener("click", function(){
+  const widthSlider = document.querySelector(".slider-content").offsetWidth;
+  document.querySelector(".slider-content").scrollLeft -= widthSlider;
+});
+
+sliderNavButtonNext.addEventListener("click", function(){
+  const widthSlider = document.querySelector(".slider-content").offsetWidth;
+    document.querySelector(".slider-content").scrollLeft += widthSlider;
+});
+
+// Side nave 
+
+
 const sideNav = document.getElementById("side-nav");
 const openBtn = document.getElementById("openBtn");
 const closeBtn = document.getElementById("closeBtn");
@@ -8,8 +29,9 @@ closeBtn.onclick = closeNav;
 
 /* Set the width of the side navigation to 250px */
 function openNav() {
-    sideNav.classList.add("active");
-    overlay.style.display = "block";
+
+sideNav.classList.add("active");
+overlay.style.display = "block";
 
 }
 /* Set the width of the side navigation to 0 */
@@ -36,7 +58,7 @@ if (document.body.clientWidth > 900) {
         stickySideBar.style.top = `${memoPositionBar}px`;
         stickySideBar.style.left = `${stickySideBar.offsetLeft}px`;
         stickySideBar.style.height = "100%";
-
+  
         function sticky() {
             let posCurseur = this.pageYOffset;
 
@@ -60,7 +82,7 @@ if (document.body.clientWidth > 900) {
                 stickySideBar.style.top = `${memoPositionBar - posCurseur}px`;
                 stickySideBar.style.left = `${stickySideBar.offsetLeft}px`;
 
-            }
+              }
         }
         window.addEventListener("scroll", sticky);
 

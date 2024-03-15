@@ -158,6 +158,10 @@ hr {
         height: 600px;
     }
 
+    #featured-recipes{
+        height: 400px;
+    }
+
     .slider-content{
         width : 100%;
         height: 400px;

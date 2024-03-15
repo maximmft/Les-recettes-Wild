@@ -38,7 +38,7 @@
 
 #side-nav {
     height: 100%;
-    width: 25%;
+    width: 10rem;
     position: fixed;
     z-index: 5;
     background-color: var(--main-color);
@@ -47,7 +47,7 @@
     transition: left 0.5s ease;
     display: flex;
     box-shadow: 3px 2px 33px -9px #45483a;
-    left: -25%;
+    left: -10rem;
     align-items: center;
 }
 
@@ -118,7 +118,14 @@ footer a {
     font-size: clamp(0.5rem, 2.5vw, 1.5rem);
 }
 
-.overlay{
+
+@media only screen and (max-width : 768px){
+
+   #navBar img {
+        height: 2rem;
+  }
+
+  .overlay{
     position: fixed;
     top: 0;
     left: 0;
