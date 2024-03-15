@@ -10,7 +10,7 @@ closeBtn.onclick = closeNav;
 function openNav() {
   sideNav.classList.add("active");
   overlay.style.display = "block";
-
+}
 /* Set the width of the side navigation to 0 */
 function closeNav() {
   sideNav.classList.remove("active");
@@ -35,7 +35,7 @@ if (document.body.clientWidth > 900) {
         stickySideBar.style.top = `${memoPositionBar}px`;
         stickySideBar.style.left = `${stickySideBar.offsetLeft}px`;
         stickySideBar.style.height = "100%";
-
+  
         function sticky() {
             let posCurseur = this.pageYOffset;
 
@@ -59,7 +59,7 @@ if (document.body.clientWidth > 900) {
                 stickySideBar.style.top = `${memoPositionBar - posCurseur}px`;
                 stickySideBar.style.left = `${stickySideBar.offsetLeft}px`;
 
-            }
+              }
         }
         window.addEventListener("scroll", sticky);
 
