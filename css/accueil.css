@@ -77,16 +77,18 @@ article img:hover{
 }
     
 .slider-nav-button{
+    z-index: 3;
     position: absolute;
     top: 50%;
     border : none;
     color : var(--main-color);
     background-color: transparent;
     cursor: pointer;
+    transition: all 0.3s linear;
 }
 
 .slider-nav-button:hover{
-    transform : scale(1.1);
+    transform : scale(1.3);
 }
 
 .slider-nav-button svg{
@@ -94,15 +96,17 @@ article img:hover{
 }
 
 .slider-content{
+    z-index: 1;
     width : 100%;
     height: 800px;
-    overflow: hidden;
+    overflow: scroll;
     scroll-behavior: smooth;
     position : relative;
     display: inline-block;
 }
 
 .slider-content-item{
+    z-index: 2;
     position : absolute;
     width: 100%;
     display: flex;
