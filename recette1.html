@@ -38,13 +38,13 @@
     </nav>
     <!-- Header de la recette -->
     <div class="overlay"></div>
-    <header id="wrapHeader">
+     <header id="wrap-header">
         <h1>Wrap poulet curry</h1>
     </header>
     <!-- Main de la recette -->
     <main>
         <!-- Side Bar de la recette -->
-        <section id="sideBar">
+        <section id="side-bar">
             <div id="icons">
                 <img class="iconRestriction" src="image/icons/Restriction/icons8-chicken-64.png"></img>
                 <img class="iconRestriction" src="image/icons/Restriction/icons8-gluten-30.png"></img>
@@ -58,7 +58,7 @@
                 --><a href="#1" title="Donner 1 étoile">★</a>
                 </div>
                 <h2>Ingrédients</h2>
-                <p id="mealQuantity">pour 2 repas
+                <p id="meal-quantity">pour 2 repas
                 <p>
                 <ul>
                     <li><img class="icon" src="image/Wrap/icons8-tortilla-64.png">2 tortillas de blé</li>
@@ -105,26 +105,26 @@
                 </p>
             </div>
             <!-- Commentaire de la recette -->
-            <div id="commentaires">
-                <div id="commentaireList">
-                    <div id="post-comment">
+            <div id="comments">
+                <div id="block-comments">
+                    <div id="list">
                         <!-- First comment-->
-                        <div id="firstComment">
-                            <div id="user">
-                                <div id="user-image"><img
+                        <div class="comment">
+                            <div class="user">
+                                <div class="user-image"><img
                                         src="https://ca.slack-edge.com/T6SG2QGG2-U03TJJCU40P-74266cd58d2e-512"></div>
                                 <div id="user-meta">
                                     <div id="name">Mickael</div>
                                     <div id="day">10 days ago</div>
                                 </div>
                             </div>
-                            <div id="comment-post">Il est vraiment trop bien ce site, ça m'a motivé à me faire plus
+                            <div class="comment-post">Il est vraiment trop bien ce site, ça m'a motivé à me faire plus
                                 souvent à manger. Merci pour les recettes !</div>
                         </div>
                         <!-- Second comment -->
-                        <div id="secondComment">
-                            <div id="user">
-                                <div id="user-image"><img
+                        <div class="comment">
+                            <div class="user">
+                                <div class="user-image"><img
                                         src="https://resize.prod.docfr.doc-media.fr/s/1200/ext/eac4ff34/content/2022/7/5/20-coiffures-a-piquer-a-beyonce-3e32633da113fe25.jpeg">
                                 </div>
                                 <div id="user-meta">
@@ -132,26 +132,24 @@
                                     <div id="day">8 days ago</div>
                                 </div>
                             </div>
-                            <div id="comment-post"> Thanks to this site, I can make French dishes at home ! Thanks guys
-                                !!</div>
+                            <div class="comment-post"> Thanks to this site, I can make French dishes at home ! Thanks guys !!</div>
                         </div>
                         <!-- Third comment -->
-                        <div id="thirdComment">
-                            <div id="user">
-                                <div id="user-image"><img
+                        <div class="comment">
+                            <div class="user">
+                                <div class="user-image"><img
                                         src="https://ca.slack-edge.com/T6SG2QGG2-U059W1UEG86-031db6a84fb6-512"></div>
                                 <div id="user-meta">
                                     <div id="name">Brian</div>
                                     <div id="day">5 days ago</div>
                                 </div>
                             </div>
-                            <div id="comment-post"> Cool les recettes ! Ce serait sympa d'en mettre toutes les semaines.
-                            </div>
+                            <div class="comment-post"> Cool les recettes ! Ce serait sympa d'en mettre toutes les semaines.</div>
                         </div>
                         <!-- Fourth comment -->
-                        <div id="fourthComment">
-                            <div id="user">
-                                <div id="user-image"><img
+                        <div class="comment">
+                            <div class="user">
+                                <div class="user-image"><img
                                         src="https://s.yimg.com/ny/api/res/1.2/_G7FIkELfPImzwZDT73N6w--/YXBwaWQ9aGlnaGxhbmRlcjt3PTgxMDtoPTYwNw--/https://media.zenfs.com/fr_FR/News/closer/Polemique-Rihanna-poste-des-photos-d-elle-fumant-des-joints-geants_exact810x609_l.jpg">
                                 </div>
                                 <div id="user-meta">
@@ -159,19 +157,15 @@
                                     <div id="day">2 days ago</div>
                                 </div>
                             </div>
-                            <div id="comment-post"> Fuck this I prefer to order Uber Eat 🖕.</div>
+                            <div class="comment-post"> Fuck this I prefer to order Uber Eat 🖕.</div>
                         </div>
-                        <textarea placeholder="Ajouter un commentaire ..." name="comment" id="newComment" cols="30"
+                        <textarea placeholder="Ajouter un commentaire ..." name="comment" id="new-comment" cols="30"
                             rows="10"></textarea>
                     </div>
                 </div>
-                <!-- Bouton Commmentaire -->
-                <div id="addNoteCommentaire">
-                    <!-- Form for the comment -->
-                    <!-- <form action="" method="post">
-                    <textarea name="comment" id="" cols="30" rows="10"></textarea> -->
-                    <button id="btnComment">Ajouter</button>
-                    <!-- </form> -->
+                <!-- Bouton Commmentaire-->
+                <div id="add-comment">
+                    <button id="btn-comment">Ajouter</button>
                     <!-- Annotation avec étoile -->
                     <div id="notes">
                         <div class="rating"><!--
