@@ -32,13 +32,13 @@
             <img src="image/icons8-loupe-64.png">
     </nav>
     <!-- Header de la recette -->
-    <header id="onigiriHeader">
+    <header id="onigiri-header">
         <h1>Onigiri <br> thon et concombre</h1>
     </header>
     <!-- Main de la recette -->
     <main>
     <!-- Side Bar de la recette -->
-    <section id="sideBar">
+    <section id="side-bar">
         <div id="icons">
             <img class = "iconRestriction" src="image/icons/Restriction/icons8-fish-48.png"></img>
             <img class = "iconRestriction" src="image/icons/Restriction/icons8-lactose-free-50.png"></img>
@@ -53,7 +53,7 @@
             --><a href="#1" title="Donner 1 étoile">★</a>
         </div>
         <h2>Ingrédients</h2>
-        <p id="mealQuantity">pour 2 repas<p>
+        <p id="meal-quantity">pour 2 repas<p>
             <ul>
                 <li><img class ="icon" src="image/icons/Onigiri/icons8-rice-bowl-50.png">200g de riz japonais</li>
                 <li><img class ="icon" src="image/icons/Onigiri/icons8-rice-vinegar-50.png">4 cuillerées à soupe de vinaigre de riz</li>
@@ -101,45 +101,52 @@
         </p>
         </div>
         <div id="hr_separation_comment"><hr id="hr_comment"></div>
-        <!-- Commentaire de la recette -->
-    <div id="commentaires">
-        <div id="commentaireList">
-            <div id="post-comment">
+     <!-- Commentaire de la recette -->
+     <div id="comments">
+        <div id="block-comments">
+            <div id="list">
                 <!-- First comment-->
-                <div id="firstComment">
+                <div class="comment">
                     <div id="user">
-                        <div id="user-image"><img src="https://ca.slack-edge.com/T6SG2QGG2-U03TJJCU40P-74266cd58d2e-512"></div>
+                        <div id="user-image"><img
+                                src="https://ca.slack-edge.com/T6SG2QGG2-U03TJJCU40P-74266cd58d2e-512"></div>
                         <div id="user-meta">
                             <div id="name">Mickael</div>
                             <div id="day">10 days ago</div>
                         </div>
                     </div>
-                    <div id="comment-post">Il est vraiment trop bien ce site, ça m'a motivé à me faire plus souvent à manger. Merci pour les recettes !</div>
+                    <div id="comment-post">Il est vraiment trop bien ce site, ça m'a motivé à me faire plus
+                        souvent à manger. Merci pour les recettes !</div>
                 </div>
-            <!-- Second comment -->
-                <div id="secondComment">
+                <!-- Second comment -->
+                <div class="comment">
                     <div id="user">
-                        <div id="user-image"><img src="https://resize.prod.docfr.doc-media.fr/s/1200/ext/eac4ff34/content/2022/7/5/20-coiffures-a-piquer-a-beyonce-3e32633da113fe25.jpeg"></div>
+                        <div id="user-image"><img
+                                src="https://resize.prod.docfr.doc-media.fr/s/1200/ext/eac4ff34/content/2022/7/5/20-coiffures-a-piquer-a-beyonce-3e32633da113fe25.jpeg">
+                        </div>
                         <div id="user-meta">
                             <div id="name">Beyonce</div>
                             <div id="day">8 days ago</div>
                         </div>
                     </div>
-                    <div id="comment-post"> Looks tasty ! I heard that Maxime cooked the best in town ! Please invite me !</div>
+                    <div id="comment-post"> Thanks to this site, I can make French dishes at home ! Thanks guys
+                        !!</div>
                 </div>
                 <!-- Third comment -->
-                <div id="thirdComment">
+                <div class="comment">
                     <div id="user">
-                        <div id="user-image"><img src="https://ca.slack-edge.com/T6SG2QGG2-U059W1UEG86-031db6a84fb6-512"></div>
+                        <div id="user-image"><img
+                                src="https://ca.slack-edge.com/T6SG2QGG2-U059W1UEG86-031db6a84fb6-512"></div>
                         <div id="user-meta">
                             <div id="name">Brian</div>
                             <div id="day">5 days ago</div>
                         </div>
                     </div>
-                    <div id="comment-post"> Cool les recettes ! Ce serait sympa d'en mettre toutes les semaines.</div>
+                    <div id="comment-post"> Cool les recettes ! Ce serait sympa d'en mettre toutes les semaines.
+                    </div>
                 </div>
                 <!-- Fourth comment -->
-                <div id="fourthComment">
+                <!-- <div class="comment">
                     <div id="user">
                         <div id="user-image"><img
                                 src="https://s.yimg.com/ny/api/res/1.2/_G7FIkELfPImzwZDT73N6w--/YXBwaWQ9aGlnaGxhbmRlcjt3PTgxMDtoPTYwNw--/https://media.zenfs.com/fr_FR/News/closer/Polemique-Rihanna-poste-des-photos-d-elle-fumant-des-joints-geants_exact810x609_l.jpg">
@@ -150,16 +157,14 @@
                         </div>
                     </div>
                     <div id="comment-post"> Fuck this I prefer to order Uber Eat 🖕.</div>
-                </div>
-                <textarea placeholder="Ajouter un commentaire ..." name="comment" id="newComment" cols="30" rows="10"></textarea>
+                </div> -->
+                <textarea placeholder="Ajouter un commentaire ..." name="comment" id="new-comment" cols="30"
+                    rows="10"></textarea>
             </div>
         </div>
         <!-- Bouton Commmentaire -->
-        <div id="addNoteCommentaire">
-            <!-- Form for the comment -->
-            <!-- <form action="" method="post">
-            <textarea name="comment" id="" cols="30" rows="10"></textarea> -->
-            <button id="btnComment">Ajouter</button>
+        <div id="add-comment">
+            <button id="btn-comment">Ajouter</button>
             <!-- </form> -->
             <!-- Annotation avec étoile -->
             <div id="notes">

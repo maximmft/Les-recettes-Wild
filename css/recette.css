@@ -1,56 +1,3 @@
-#sideNav {
-    height: 100%;
-    width: 15rem;
-    position: fixed;
-    background-color: var(--main-color);
-    top: 0;
-    padding-top: 60px;
-    transition: left 0.5s ease;
-    display: flex;
-    box-shadow: 3px 2px 33px -9px #45483a;
-    left: -15rem;
-}
-
-#sideNav ul li a {
-    text-decoration: none;
-    color: azure;
-    padding: 1rem 1rem 1rem 3rem;
-    font-size: 1.2rem;
-    display: block;
-
-}
-
-#sideNav ul li a:hover {
-    color: brown;
-}
-
-#sideNav.active {
-    left: 0;
-}
-
-#sideNav #closeBtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    color: white;
-    text-decoration: none;
-}
-
-
-#navBar {
-    background-color: var(--main-color);
-    width: 100%;
-    height: 4rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-#navBar img {
-    height: 3rem;
-}
-
 header {
     display: flex;
     text-align: center;
@@ -66,23 +13,23 @@ header {
     box-shadow: -1px 8px 8px -2px #A5A58D;
 }
 
-#onigiriHeader {
+#onigiri-header {
     background-image: url(../image/Onigiri/onigiri\ -\ blurred.jpg);
 }
 
-#wrapHeader {
+#wrap-header {
     background-image: url(../image/Wrap/wrap-poulet-ranch-modified.png);
 }
 
-#carbonaraHeader {
+#carbonara-header {
     background-image: url(../image/Carbonara/pasta-712664_640-modified.png);
 }
 
-#pastaTomateHeader {
+#pasta-tomate-header {
     background-image: url(../image/Pasta/pasta-7236369_640-modified.png);
 }
 
-#chiliHeader{
+#chili-header{
     background-image: url(../image/Chili/pexels-photo-15881322.jpeg);
 }
 
@@ -98,7 +45,7 @@ main {
     margin-right: 10%;
 }
 
-#sideBar {
+#side-bar {
     display: flex;
     flex-direction: column;
     background-color: var(--main-color);
@@ -122,12 +69,12 @@ h3 {
     border-bottom: solid 1px white;
 }
 
-#sideBar ul {
+#side-bar ul {
     margin-top: 10px;
 
 }
 
-#sideBar ul li {
+#side-bar ul li {
     display: flex;
     flex-direction: row;
     padding: 5px;
@@ -136,7 +83,7 @@ h3 {
 
 }
 
-#mealQuantity {
+#meal-quantity {
     font-size: 1rem;
     text-align: center;
     margin-bottom: 2rem;
@@ -207,14 +154,14 @@ p {
 }
 
 
-#commentaires {
+#comments {
     display: flex;
     flex-direction: column;
     margin-bottom: 20px;
     margin-top: 20px;
 }
 
-#commentaireList {
+#block-comments {
     block-size: 120px;
     background-color: var(--main-color);
     height: auto;
@@ -223,16 +170,13 @@ p {
     padding: 0.5% 0%;
 }
 
-#post-comment {
+#list {
     display: flex;
     flex-direction: column;
 }
 
-#firstComment,
-#secondComment,
-#thirdComment,
-#fourthComment,
-#newComment {
+.comment,
+#new-comment {
     display: flex;
     flex-direction: row;
     block-size: 100px;
@@ -245,17 +189,17 @@ p {
     padding: 5px;
 }
 
-#newComment {
+#new-comment {
     resize: inherit;
 
 }
 
-#newComment:focus-visible {
+#new-comment:focus-visible {
     box-shadow: 0 0 0 1px var(--secondary-main-color);
     outline: none;
 }
 
-#user {
+.user {
     display: flex;
     flex-direction: row;
     font-family: "Jost";
@@ -264,7 +208,7 @@ p {
     margin-right: 4%;
 }
 
-#user-image img {
+.user-image img {
     width: 30px;
     height: 30px;
     border-radius: 20px;
@@ -280,7 +224,7 @@ p {
     flex-direction: row;
 }
 
-#comment-post {
+.comment-post {
     display: flex;
     justify-content: center;
     font-family: "Jost";
@@ -288,13 +232,13 @@ p {
     margin-left: 10px;
 }
 
-#addNoteCommentaire {
+#add-comment {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
-#btnComment {
+#btn-comment {
     background-color: var(--secondary-color);
     border-radius: 20px;
     width: 200px;
