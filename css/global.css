@@ -36,21 +36,22 @@
     color: white;
 }
 
-#sideNav {
+#side-nav {
     height: 100%;
-    width: 15rem;
+    width: 10rem;
     position: fixed;
+    z-index: 5;
     background-color: var(--main-color);
     top: 0;
     padding-top: 60px;
     transition: left 0.5s ease;
     display: flex;
     box-shadow: 3px 2px 33px -9px #45483a;
-    left: -15rem;
+    left: -10rem;
     align-items: center;
 }
 
-#sideNav ul li a{
+#side-nav ul li a{
     text-decoration: none;
     color: azure;
     padding: 3rem 1rem;
@@ -61,14 +62,19 @@
 
 }
 
-#sideNav ul li a:hover{
+#side-nav ul li a:hover{
     color: var(--secondary-main-color);
 }
 
-#sideNav.active {
+#side-nav.active {
     left: 0;
 }
-#sideNav #closeBtn {
+
+
+#closeBtn, #openBtn{
+    cursor: pointer;
+}
+#side-nav #closeBtn {
     position: absolute;
     top: 0;
     right: 25px;
@@ -77,7 +83,7 @@
     text-decoration: none;
 }
 
-#navBar {
+#nav-bar {
     background-color: var(--main-color);
     width: 100%;
     height: 5rem;
@@ -86,7 +92,7 @@
     align-items: center;
 }
 
-#navBar img{
+#nav-bar img{
     height: 3rem;
 }
 
@@ -112,9 +118,20 @@ footer a {
     font-size: clamp(0.5rem, 2.5vw, 1.5rem);
 }
 
+
 @media only screen and (max-width : 768px){
 
-    #navBar img {
+   #navBar img {
         height: 2rem;
-    }
+  }
+
+  .overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: none;
+    z-index: 4;
 }
