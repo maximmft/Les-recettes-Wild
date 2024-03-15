@@ -7,7 +7,7 @@
     <meta name="description"
         content="Site de recettes simples et ludiques pour les wilders qui n'ont pas le temps de cuisiner">
     <meta name="keywords" content="recette, Wild Code School, wilder, étudiant">
-    <link rel="shortcut icon" href="image/favicone.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="image/Accueil/favicone.ico" type="image/x-icon">
     <title>Les recettes Wild | Accueil</title>
     <!-- icones -->
     <link rel="stylesheet"
@@ -26,7 +26,7 @@
             <a id="closeBtn" href="#">×</a>
             <ul>
                 <li><a href="">Les recettes Wild</a></li>
-                <li><a href="">Semainier</a></li>
+                <li><a href="semainier.html">Semainier</a></li>
                 <li><a href="">A propos de nous</a></li>
                 <li><a href="">Nous contacter</a></li>
             </ul>
@@ -41,6 +41,7 @@
         <img src="image/logo.svg">
         <img src="image/icons8-loupe-64.png">
     </nav>
+    <div class="overlay"></div>
     <header>
         <h1>Les recettes Wild</h1>
         <h2>Happy food, happier wilder</h2>
@@ -50,30 +51,35 @@
             <hr>
             <h2>Nos recettes à la une</h2>
             <div id="slider">
-                <div class="slider__nav">
-                    <button class="slider__nav__button slider__nav__button--previous">Précédent</button>
-                    <button class="slider__nav__button slider__nav__button--next">Suivant</button>
+                <div class="slider-nav">  
+                    <button class="slider-nav-button slider-nav-button--previous"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5 3 12m0 0 7.5-7.5M3 12h18" />
+                      </svg>
+                      </button>
+                    <button class="slider-nav-button slider-nav-button--next"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                      </svg>
+                      </button>
                 </div>
-                <div class="slider__content">
-
-                    <article class="slider__content__item">
-                        <a href="recette1.html"><img src="image/onigiri/Onigiri.jpg" alt="onigiri"></a>
-                        <p>Lorem ipsum</p>
-                    </article>
-                    <article class="slider__content__item">
-                        <a href="recipe2.html"><img src="image/lunchbox_dejeuner.jpg" alt="onigiri"></a>
-                        <p>Lorem ipsum</p>
-                    </article>
-                    <article class="slider__content__item">
-                        <a href="recipe3.html"><img src="image/Onigiri/onigiri.jpg" alt="onigiri"></a>
-                        <p>Lorem ipsum</p>
-                    </article>
+                <div class="slider-content">
+            <article class="slider-content-item slider-content-item1">
+                <a href="recipe_onigiri.html"><img src="image/onigiri/Onigiri.jpg" alt="onigiri"></a>
+                <p>De délicieux Onigiri maison et rapide !</p>
+            </article>
+            <article class="slider-content-item slider-content-item2">
+                <a href="recipe_carbonara.html"><img src="image/Accueil/pasta-resized.jpg" alt="onigiri"></a>
+                <p>La vraie recette italienne des pâtes carbo !</p>
+            </article>
+            <article class="slider-content-item slider-content-item3">
+                <a href="recipe_chili.html"><img src="image/Accueil/chili-resized.jpeg" alt="onigiri"></a>
+                <p>L'incontournable chili con carne !</p>
+            </article>
                 </div>
             </div>
         </section>
         <hr>
         <section id="button-container">
-            <a href="semainier.html" class="button">découvrir notre semainier</a>
+           <a href="semainier.html" class="button-semainier">découvrir notre semainier</a>
         </section>
     </main>
     <footer>
@@ -82,8 +88,6 @@
         <a href="#">Nous contacter</a>
     </footer>
     <script src="javascript/script.js"></script>
-    <script src="/accueil.js"></script>
+    <script src="accueil.js"></script>
 </body>
-
-
 </html>
