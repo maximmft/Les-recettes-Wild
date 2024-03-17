@@ -23,6 +23,18 @@ function closeNav() {
 }
 
 
+//  Display recipes in side nav
+
+const listRecipes = document.querySelector("#recettes-wild")
+const recipes = document.querySelectorAll("#recettes-side-nav li");
+
+listRecipes.addEventListener("click", function(){
+    recipes.forEach(recipe =>{
+    recipe.style.display = "block";
+    });
+});
+
+
 // Begin Section Side Bar
 
 
