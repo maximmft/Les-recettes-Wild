@@ -65,15 +65,17 @@
         <section id="nous-contacter">
             <h1>Nous contacter</h1>
             <hr>
-            <p>Nom :</p>
-            <textarea placeholder="" name="nom"></textarea>
-            <p>Prénom :</p>
-            <textarea placeholder="" name="prénom"></textarea>
-            <p>Email :</p>
-            <textarea placeholder="" name="email"></textarea>
-            <p>Ton message :</p>
-            <textarea placeholder="Ajoute ton message" name="message" cols="60" rows="7"></textarea>
-            <button id="button-send">Envoyer</button>
+            <form>
+                <label for="last-name">Nom :</label><br>
+                <input type="text" id="last-name" name="last-name" placeholder="Lambert"><br>
+                <label for="first-name">Prénom :</label><br>
+                <input type="text" id="first-name" name="first-name" placeholder="Tidus"><br>
+                <label for="email">Email :</label><br>
+                <input type="text" id="email" name="email" placeholder="tidus.lambert@lycos.fr"><br>
+                <label for="message">Ton message :</label><br>
+                <textarea placeholder="Ajoute ton message" name="message" cols="60" rows="7"></textarea><br>
+                <input type="submit" value="Envoyer">
+            </form>
         </section>
     </main>
     <footer>
