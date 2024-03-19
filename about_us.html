@@ -16,6 +16,7 @@
     <!-- fichiers CSS -->
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/about_us.css">
 </head>
 <body>
     <nav id="nav-bar">
@@ -48,17 +49,17 @@
             <h1>L'équipe</h1>
             <hr>
             <div id="photo-container">
-                <div id="profil1">
-                    <img>
-                    <p class="profil-description">Nom, âge et fun fact</p>
+                <div class="profil">
+                    <img src="/image/about us/aude-img.jpeg">
+                    <p class="profil-description">Aude, 28 ans et fun fact</p>
                 </div>
-                <div id="profil2">
-                    <img>
-                    <p class="profil-description">Nom, âge et fun fact</p>
+                <div class="profil">
+                    <img src="/image/about us/maxime-img.jpg">
+                    <p class="profil-description">Maxime, 27 ans et fun fact</p>
                 </div>
-                <div id="profil3">
-                    <img>
-                    <p class="profil-description">Nom, âge et fun fact</p>
+                <div class="profil">
+                    <img src="/image/about us/manue-img.jpg">
+                    <p class="profil-description">Manue, 34 ans et fun fact</p>
                 </div>
             </div>
         </section>
@@ -66,15 +67,27 @@
             <h1>Nous contacter</h1>
             <hr>
             <form>
-                <label for="last-name">Nom :</label><br>
-                <input type="text" id="last-name" name="last-name" placeholder="Lambert"><br>
-                <label for="first-name">Prénom :</label><br>
-                <input type="text" id="first-name" name="first-name" placeholder="Tidus"><br>
-                <label for="email">Email :</label><br>
-                <input type="text" id="email" name="email" placeholder="tidus.lambert@lycos.fr"><br>
-                <label for="message">Ton message :</label><br>
-                <textarea placeholder="Ajoute ton message" name="message" cols="60" rows="7"></textarea><br>
-                <input type="submit" value="Envoyer">
+                <div id="fullname">
+                    <div id="last-name-container">
+                        <label for="last-name">Nom :</label><br>
+                        <input type="text" id="last-name" name="last-name" placeholder="Lambert"><br>
+                    </div>
+                    <div id="first-name-container">
+                        <label for="first-name">Prénom :</label><br>
+                        <input type="text" id="first-name" name="first-name" placeholder="Tidus"><br>
+                    </div>
+                </div>    
+                    <div id="email-container">
+                        <label for="email">Email :</label><br>
+                        <input type="text" id="email" name="email" placeholder="tidus.lambert@lycos.fr"><br>
+                    </div>
+                    <div id="message-area">
+                        <label for="message">Ton message :</label><br>
+                        <textarea placeholder="Ajoute ton message" name="message" cols="60" rows="7"></textarea><br>
+                    </div>
+                    <div id="bouton-container">
+                        <input id="bouton" type="submit" value="Envoyer">
+                    </div>    
             </form>
         </section>
     </main>

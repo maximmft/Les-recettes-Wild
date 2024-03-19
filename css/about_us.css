@@ -1,0 +1,101 @@
+h1{
+    font-size : clamp(3rem, 5vw, 4rem);
+    color : var(--secondary-main-color);
+    font-family: "Kanit";
+    font-weight: bold;
+    padding : 5% 0%;
+}   
+/* A PROPOS DE NOUS */
+
+#a-propos-de-nous{
+    text-align: center;
+    margin : 3rem;
+}
+
+#a-propos-de-nous p{
+    font-family: "Jost";
+    padding : 2rem 0rem; 
+}
+
+hr {
+    color: var(--main-color);
+    width: 60%;
+    margin : auto; 
+}
+
+/* L EQUIPE */
+
+#equipe {
+    text-align: center;
+}
+
+#photo-container{
+    display: flex;
+    justify-content: space-around;
+    margin : 2rem 0rem;
+}
+
+.profil{
+    width : 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border : 2px solid var(--secondary-color);
+    border-radius: 4rem;
+    padding : 1rem;
+}
+
+.profil img{
+    width: 100%;
+    border-radius: 4rem;
+}
+
+.profil-description{
+    font-family: "Jost";
+    padding : 1rem 0;
+}
+
+/* NOUS CONTACTER */
+
+#nous-contacter{
+    text-align: center;
+}
+
+form{
+    margin: 2rem auto;
+    font-family: "Jost";
+    text-align: left;
+    width: 80%;
+}
+
+#fullname{
+    display: flex;
+    justify-content: space-between;
+}
+
+#last-name, #first-name, #email{
+    width : 300px;
+}
+
+#email-container{
+    margin : 1rem 0;
+}
+
+#message-area{
+    display: flex;
+    flex-direction: column;
+}
+
+#bouton-container{
+    display: flex;
+    justify-content: center;
+}
+
+#bouton{
+    background-color: var(--secondary-main-color);
+    color : white;
+    padding: 10px 40px;
+    font-size: clamp(0.5rem, 2vw, 1.5rem);
+    border : none;
+    border-radius: 10px;
+}
