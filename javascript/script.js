@@ -80,17 +80,35 @@ const newComment = document.querySelector("#new-comment");
 
 const comment = document.querySelector(".comment");
 
-const list = document.querySelector("#list");
+// const list = document.querySelector("#list");
 
-const commentPost = document.querySelector(".comment-post");
+// const commentPost = document.querySelector(".comment-post");
 
-commentButton.addEventListener('click', () => {
-    if (newComment.value){
+
+function addComment () {
+  if (newComment.value){
     const clone = comment.cloneNode(true);
     clone.children[1].innerText = newComment.value;
     list.insertBefore(clone, newComment);
     newComment.value = "";
-    }
-})
+}
+}
+
+commentButton.addEventListener('click', () => {
+addComment();
+});
+
+
+newComment.addEventListener("keyup", (event) => {
+  event.preventDefault();
+  if(event.keyCode === 13) {
+    console.log("enter is pressed");
+    commentButton.click();
+  }
+});
 
 // end section creation d'un nouveau commentaire
+
+
+// recuperer la liste des commentaires 
+// puis ajouter dans le local storage
