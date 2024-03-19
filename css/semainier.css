@@ -53,13 +53,12 @@ hr{ width: 60%;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    margin-bottom: 3rem;
 }
 
 #semainier #bottom-image{
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: center;
 }
 
 
