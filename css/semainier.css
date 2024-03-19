@@ -111,16 +111,6 @@ hr{ width: 60%;
     background-image: url(../image/Wrap/wrap-poulet-ranch-modified.png);
 }
 
-footer {
-    background-color: var(--main-color);
-    height: 3rem;
-    color: white;
-    font-size: 2rem;
-    display: flex;
-    align-items: center;
-    padding-left: 1rem;
-}
-
 
 @media only screen and (max-width : 1000px) {
     #semainier #top-image{
