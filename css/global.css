@@ -100,11 +100,18 @@
     text-decoration: none;
 }
 
+#recettes-side-nav {
+    display: none;
+}
+
+#recettes-side-nav.visible {
+    display: block;
+}
+
 #recettes-side-nav li {
     padding-bottom: 2rem;
     margin-left: 3rem;
     list-style: none;
-    display: none;
 }
 
 #recettes-side-nav li a{
@@ -118,6 +125,8 @@
     opacity: 1;
     transition: all 0.2s ease-in-out;
 }
+
+
 
 #nav-bar {
     background-color: var(--main-color);

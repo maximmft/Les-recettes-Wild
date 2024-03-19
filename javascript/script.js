@@ -26,20 +26,21 @@ function closeNav() {
 //  Display recipes in side nav
 
 const listRecipes = document.querySelector("#recettes-wild")
-const recipes = document.querySelectorAll("#recettes-side-nav li");
+const recipeList = document.querySelector("#recettes-side-nav");
 
-listRecipes.addEventListener("click", function(){
-    recipes.forEach(recipe =>{
-    recipe.style.display = "block";
-    });
+listRecipes.addEventListener("click", function() {
+  recipeList.classList.toggle("visible");
 });
+
+
+  // recipe.style.display = "block";});
+  // });
 
 
 // Begin Section Side Bar
 
 
 if (document.body.clientWidth > 900) {
-
     (function () {
         let stickySideBar = document.querySelector("#side-bar");
 

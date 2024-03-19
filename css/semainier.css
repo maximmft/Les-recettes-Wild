@@ -73,7 +73,13 @@ hr{ width: 60%;
     border-radius: 4rem;
     width: 18rem;
     height: 18rem;
+    transition: all 0.5s ease-in-out;
+    box-shadow:  -1px 32px -1px rgba(25, 35, 22, 0.61)
     
+}
+
+#semainier article:hover{
+    transform: scale(1.1);
 }
 
 #semainier a{
