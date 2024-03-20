@@ -23,17 +23,23 @@
         <nav id="side-nav">
             <a id="closeBtn" href="#">×</a>
             <ul>
-                <li><a href="accueil.html">Les recettes Wild</a></li>
-                <li><a href="semainier.html">Semainier</a></li>
-                <li><a href="">A propos de nous</a></li>
-                <li><a href="">Nous contacter</a></li>
+                <li class="main-list" id="recettes-wild"><a>Les recettes Wild</a></li>
+                    <ul id="recettes-side-nav">
+                        <li><a href="recipe_onigiri.html">Onigiri</a></li>
+                        <li><a href="recipe_chili.html">Chili con carne</a></li>
+                        <li><a href="recipe_wrap.html">Wrap poulet curry</a></li>
+                        <li><a href="recipe_pot_pasta.html">One pot pasta tomate</a></li>
+                        <li><a href="recipe_carbonara.html">Pates carbonara</a></li>
+                    </ul>
+                <li class="main-list"><a href="semainier.html">Semainier</a></li>
+                <li class="main-list"><a href="">A propos de nous</a></li>
             </ul>
         </nav>
         <a href="#" id="openBtn">
             <img src="image/icons8-menu-50.png" id="burger-icon">
         </a>
-        <img src="image/logo.svg">
-        <img src="image/icons8-loupe-64.png">
+        <a href="accueil.html"><img src="image/logo.svg"></a>
+        <img id= "search" src="image/icons8-loupe-64.png">
     </nav>
     <div class="overlay"></div>
     <header id="header-semainier">
@@ -43,7 +49,7 @@
 
     <main>
         <section id="week-date">
-            <p>Semaine du 26 février au 3 mars</p>
+            <p>Semaine du 1er au 7 avril</p>
         </section>
         <section>
             <hr>
@@ -54,14 +60,18 @@
                     <article id="mercredi"><a href="recipe_chili.html">MERCREDI</a></article>
                 </div>
                 <div id="bottom-image">
-                    <article id="jeudi"><a href="recipe3.html">JEUDI</a></article>
-                    <article id="vendredi"><a href="recette1.html">VENDREDI</a></article>
+                    <article id="jeudi"><a href="recipe_pot_pasta.html">JEUDI</a></article>
+                    <article id="vendredi"><a href="recipe_wrap.html">VENDREDI</a></article>
                 </div>
             </div>
             <hr>
         </section>
     </main>
-    <footer>©</footer>
+    <footer>
+        <p>&copy 2024 Wild Code School</p>
+        <p>Made with ❤️ by Les TechnoPoufs</p>
+        <a href="#">Nous contacter</a>
+    </footer>
     <script src="javascript/script.js"></script>
 </body>
 

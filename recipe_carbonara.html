@@ -21,17 +21,23 @@
         <nav id="side-nav">
             <a id="closeBtn" href="#">×</a>
             <ul>
-                <li><a href="accueil.html">Les recettes Wild</a></li>
-                <li><a href="semainier.html">Semainier</a></li>
-                <li><a href="">A propos de nous</a></li>
-                <li><a href="">Nous contacter</a></li>
+                <li class="main-list" id="recettes-wild"><a>Les recettes Wild</a></li>
+                    <ul id="recettes-side-nav">
+                        <li><a href="recipe_onigiri.html">Onigiri</a></li>
+                        <li><a href="recipe_chili.html">Chili con carne</a></li>
+                        <li><a href="recipe_wrap.html">Wrap poulet curry</a></li>
+                        <li><a href="recipe_pot_pasta.html">One pot pasta tomate</a></li>
+                        <li><a href="recipe_carbonara.html">Pates carbonara</a></li>
+                    </ul>
+                <li class="main-list"><a href="semainier.html">Semainier</a></li>
+                <li class="main-list"><a href="">A propos de nous</a></li>
             </ul>
         </nav>
         <a href="#" id="openBtn">
             <img src="image/icons8-menu-50.png" id="burger-icon">
         </a>
-        <img src="image/logo.svg">
-        <img src="image/icons8-loupe-64.png">
+        <a href="accueil.html"><img src="image/logo.svg"></a>
+        <img id= "search" src="image/icons8-loupe-64.png">
     </nav>
     <!-- Header de la recette -->
     <div class="overlay"></div>
