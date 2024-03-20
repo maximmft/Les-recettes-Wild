@@ -1,5 +1,5 @@
 h1{
-    font-size : clamp(3rem, 5vw, 4rem);
+    font-size : clamp(2rem, 3vw, 16rem);
     color : var(--secondary-main-color);
     font-family: "Kanit";
     font-weight: bold;
@@ -9,12 +9,24 @@ h1{
 
 #a-propos-de-nous{
     text-align: center;
-    margin : 3rem;
+    margin : 3rem 10rem;
 }
 
 #a-propos-de-nous p{
     font-family: "Jost";
-    padding : 2rem 0rem; 
+    font-size: clamp(1rem, 2vw, 1.1rem);
+}
+
+#text-fixe{
+    padding-top: 2rem;
+}
+
+#read-more-text{
+    padding-bottom: 2rem;
+}
+
+#more{
+    display: none;
 }
 
 hr {
@@ -65,7 +77,7 @@ form{
     margin: 2rem auto;
     font-family: "Jost";
     text-align: left;
-    width: 80%;
+    width: 60%;
 }
 
 #fullname{
@@ -74,7 +86,9 @@ form{
 }
 
 #last-name, #first-name, #email{
-    width : 300px;
+    width : 20rem;
+    border: none;
+    border-bottom: 1px solid var(--main-color);
 }
 
 #email-container{
@@ -86,6 +100,11 @@ form{
     flex-direction: column;
 }
 
+textarea{
+    border-radius: 0.7rem;
+    color: var(--main-color);
+}
+
 #bouton-container{
     display: flex;
     justify-content: center;
@@ -95,7 +114,61 @@ form{
     background-color: var(--secondary-main-color);
     color : white;
     padding: 10px 40px;
-    font-size: clamp(0.5rem, 2vw, 1.5rem);
+    font-size: clamp(1rem, 2vw, 1.5rem);
     border : none;
     border-radius: 10px;
+    box-shadow: 0px 0px 10px var(--secondary-color);
+    cursor: pointer;
+    transition: all 0.3s linear;
+}
+
+#bouton:hover{
+    transform : scale(1.1);
+}
+
+
+@media only screen and (max-width : 768px){
+
+    #a-propos-de-nous{
+        margin: 3rem 1.5rem;
+    }
+
+    #more{
+        display: inline;
+        border: none;
+        color: var(--main-color);
+        border-bottom: 1px solid var(--main-color);
+    }
+
+    #photo-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .profil{
+        width: 60%;
+        margin-bottom: 1.5rem;
+    }
+
+    form{
+        width: 80%;
+    }
+
+    #fullname{
+        display: flex;
+        flex-direction: column;
+
+    }
+    #last-name, #first-name, #email{
+        width : 100%;
+    }
+
+    #read-more-text{
+        display: none;
+    }
+
+    #read-more-text.visible{
+        display: block;
+    }
 }
