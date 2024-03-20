@@ -240,13 +240,16 @@ p {
 }
 
 #btn-comment {
-    background-color: var(--secondary-color);
+    background-color: var(--main-color);
     border-radius: 20px;
     width: 200px;
+    border: none;
+    color: white;
+    font-family: "jost";
 }
 
 #notes {
-    background-color: var(--secondary-color);
+    background-color: var(--main-color);
     border-radius: 20px;
     width: 100px;
 }
