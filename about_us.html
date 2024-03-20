@@ -23,17 +23,23 @@
         <nav id="side-nav">
             <a id="closeBtn" href="#">×</a>
             <ul>
-                <li><a href="accueil.html">Les recettes Wild</a></li>
-                <li><a href="semainier.html">Semainier</a></li>
-                <li><a href="">A propos de nous</a></li>
-                <li><a href="">Nous contacter</a></li>
+                <li class="main-list" id="recettes-wild"><a>Les recettes Wild</a></li>
+                    <ul id="recettes-side-nav">
+                        <li><a href="recipe_onigiri.html">Onigiri</a></li>
+                        <li><a href="recipe_chili.html">Chili con carne</a></li>
+                        <li><a href="recipe_wrap.html">Wrap poulet curry</a></li>
+                        <li><a href="recipe_pot_pasta.html">One pot pasta tomate</a></li>
+                        <li><a href="recipe_carbonara.html">Pates carbonara</a></li>
+                    </ul>
+                <li class="main-list"><a href="semainier.html">Semainier</a></li>
+                <li class="main-list"><a href="about_us.html">A propos de nous</a></li>
             </ul>
         </nav>
-        <a href="#" id="openBtn">
-        <img src="image/icons8-menu-50.png" id="burger-icon">
-        </a>
-        <img src="image/logo.svg">
-        <img src="image/icons8-loupe-64.png">
+            <a href="#" id="openBtn">
+                <img src="image/icons8-menu-50.png" id="burger-icon">
+            </a>
+            <a href="accueil.html"><img src="image/logo.svg"></a>
+            <img id= "search" src="image/icons8-loupe-64.png">
     </nav>
     <div class="overlay"></div>
     <header></header>
@@ -56,16 +62,16 @@
             <hr>
             <div id="photo-container">
                 <div class="profil">
-                    <img src="/image/about us/aude-img.jpeg">
-                    <p class="profil-description">Aude, 28 ans et fun fact</p>
+                    <img src="image/about us/aude-img.jpeg">
+                    <p class="profil-description">Aude, 28 ans, <br> mon fun fact est que je me suis baigné avec un grand requin blanc.</p>
                 </div>
                 <div class="profil">
-                    <img src="/image/about us/maxime-img.jpg">
-                    <p class="profil-description">Maxime, 27 ans et fun fact</p>
+                    <img src="image/about us/maxime-img.jpg">
+                    <p class="profil-description">Maxime, 27 ans, <br>mon fun fact est que j'ai nagé avec des baleines en Polynésie. </p>
                 </div>
                 <div class="profil">
-                    <img src="/image/about us/manue-img.jpg">
-                    <p class="profil-description">Manue, 34 ans,<br> mon funfact est que je chante systématiquement sous la douche.</p>
+                    <img src="image/about us/manue-img.jpg">
+                    <p class="profil-description">Manue, 34 ans,<br> mon funfact est que j'ai déjà sauté d'un avion.</p>
                 </div>
             </div>
         </section>
