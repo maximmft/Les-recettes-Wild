@@ -74,13 +74,13 @@ header h2 {
 
 .slider-content{
     z-index: 1;
-    width : 60%;
+    width : 50%;
     height: 800px;
     overflow: hidden;
     scroll-behavior: smooth;
     position : relative;
     display: inline-block;
-    left: 20%
+    left: 25%
 }
 
 .slider-content-item{
