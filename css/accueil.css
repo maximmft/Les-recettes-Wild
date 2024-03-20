@@ -75,7 +75,7 @@ header h2 {
 .slider-content{
     z-index: 1;
     width : 50%;
-    height: 800px;
+    height: 600px;
     overflow: hidden;
     scroll-behavior: smooth;
     position : relative;
@@ -145,7 +145,7 @@ article p {
 hr {
     color: var(--main-color);
     width: 60%;
-    margin: 6rem auto;
+    margin: 5rem auto;
 }
 
 
