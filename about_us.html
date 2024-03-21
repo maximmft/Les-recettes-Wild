@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Site de recettes simples et ludiques pour les wilders qui n'ont pas le temps de cuisiner">
+    <meta name="keywords" content="recette, Wild Code School, wilder, étudiant">
+    <link rel="shortcut icon" href="image/Accueil/favicone.ico" type="image/x-icon">
+    <title>Les recettes Wild | A propos de nous</title>
+    <!-- icones -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <!-- fichiers CSS -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/about_us.css">
+</head>
+<body>
+    <nav id="nav-bar">
+        <nav id="side-nav">
+            <a id="closeBtn" href="#">×</a>
+            <ul>
+                <li class="main-list" id="recettes-wild"><a>Les recettes Wild</a></li>
+                    <ul id="recettes-side-nav">
+                        <li><a href="recipe_onigiri.html">Onigiri</a></li>
+                        <li><a href="recipe_chili.html">Chili con carne</a></li>
+                        <li><a href="recipe_wrap.html">Wrap poulet curry</a></li>
+                        <li><a href="recipe_pot_pasta.html">One pot pasta tomate</a></li>
+                        <li><a href="recipe_carbonara.html">Pâtes carbonara</a></li>
+                    </ul>
+                <li class="main-list"><a href="semainier.html">Semainier</a></li>
+                <li class="main-list"><a href="about_us.html">A propos de nous</a></li>
+            </ul>
+        </nav>
+            <a href="#" id="openBtn">
+                <img src="image/icons8-menu-50.png" id="burger-icon">
+            </a>
+            <a href="accueil.html"><img src="image/logo.svg"></a>
+            <img id= "search" src="image/icons8-loupe-64.png">
+    </nav>
+    <div class="overlay"></div>
+    <header></header>
+    <main>
+        <section id="a-propos-de-nous">
+            <h1>A propos de Nous</h1>
+            <hr>
+            <p id="text-fixe">Bienvenue sur "Les Recettes Wild" !<br><br>
+                Nous sommes Aude, Manue et Maxime, une équipe passionnée de cuisine, désireuse de partager notre amour pour la gastronomie avec vous, chers "wilders". <button id="more">En savoir plus</button><br><br>
+                <p id="read-more-text">
+                Dans un monde souvent trop pressé, nous croyons fermement que la préparation de repas délicieux ne devrait jamais être compliquée. C'est pourquoi nous avons créé ce site de recettes faciles, simples et accessibles à tous.
+                Notre objectif est de vous inspirer et de vous aider à réaliser des plats savoureux avec aisance et plaisir.<br><br>
+                Sur "Les Recettes Wild", vous trouverez une variété de recettes allant des classiques réconfortants aux innovations culinaires audacieuses. Chaque recette est soigneusement élaborée pour être facile à suivre, avec des instructions claires et des ingrédients facilement disponibles.
+                Nous croyons en une cuisine qui nourrit non seulement le corps, mais aussi l'âme. C'est pourquoi nos recettes sont plus que de simples instructions - elles sont des invitations à explorer, à expérimenter et à savourer chaque instant passé en cuisine.<br><br>
+                Rejoignez-nous dans cette aventure culinaire et laissez "Les Recettes Wild" vous guider vers des repas délicieux et ludiques.</p>
+                </p>
+        </section>
+        <section id="equipe">
+            <h1>L'équipe</h1>
+            <hr>
+            <div id="photo-container">
+                <div class="profil">
+                    <img src="image/about us/aude-img.jpeg">
+                    <p class="profil-description">Aude, 28 ans, <br> mon fun fact est que je me suis baignée avec un grand requin blanc.</p>
+                </div>
+                <div class="profil">
+                    <img src="image/about us/maxime-img.jpg">
+                    <p class="profil-description">Maxime, 27 ans, <br>mon fun fact est que j'ai nagé avec des baleines en Polynésie. </p>
+                </div>
+                <div class="profil">
+                    <img src="image/about us/manue-img.jpg">
+                    <p class="profil-description">Manue, 34 ans,<br> mon funfact est que j'ai déjà sauté d'un avion.</p>
+                </div>
+            </div>
+        </section>
+        <section id="nous-contacter">
+            <h1>Nous contacter</h1>
+            <hr>
+            <form>
+                <div id="fullname">
+                    <div id="last-name-container">
+                        <label for="last-name">Nom :</label><br>
+                        <input type="text" id="last-name" name="last-name" placeholder="Lambert"><br>
+                    </div>
+                    <div id="first-name-container">
+                        <label for="first-name">Prénom :</label><br>
+                        <input type="text" id="first-name" name="first-name" placeholder="Tidus"><br>
+                    </div>
+                </div>    
+                    <div id="email-container">
+                        <label for="email">Email :</label><br>
+                        <input type="text" id="email" name="email" placeholder="tidus.lambert@lycos.fr"><br>
+                    </div>
+                    <div id="message-area">
+                        <label for="message">Ton message :</label><br>
+                        <textarea placeholder=" Ajoute ton message" name="message" cols="60" rows="7"></textarea><br>
+                    </div>
+                    <div id="bouton-container">
+                        <input id="bouton" type="submit" value="Envoyer">
+                    </div>    
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy 2024 Wild Code School</p>
+        <p>Made with ❤️ by Les TechnoPoufs</p>
+    </footer>
+    <script src="javascript/script.js"></script>
+    <script src="about_us.js"></script>
+</body>
+</html>

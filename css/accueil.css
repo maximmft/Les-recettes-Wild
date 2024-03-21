@@ -2,7 +2,7 @@
 
 header {
     background-image: url("../image/Accueil/image-accueil.jpg");
-    height: 800px;
+    height: 710px;
     min-height: 350px;
     background-repeat: no-repeat;
     background-size: cover;
@@ -56,7 +56,7 @@ header h2 {
 .slider-nav-button{
     z-index: 3;
     position: absolute;
-    top: 50%;
+    top: 30%;
     border : none;
     color : var(--main-color);
     background-color: transparent;
@@ -74,12 +74,13 @@ header h2 {
 
 .slider-content{
     z-index: 1;
-    width : 100%;
-    height: 800px;
+    width : 50%;
+    height: 600px;
     overflow: hidden;
     scroll-behavior: smooth;
     position : relative;
     display: inline-block;
+    left: 25%
 }
 
 .slider-content-item{
@@ -144,7 +145,7 @@ article p {
 hr {
     color: var(--main-color);
     width: 60%;
-    margin: 6rem auto;
+    margin: 5rem auto;
 }
 
 
@@ -165,6 +166,7 @@ hr {
     .slider-content{
         width : 100%;
         height: 400px;
+        left: 0;
     }
 
     .slider-content-item img{

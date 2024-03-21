@@ -76,6 +76,7 @@
     pointer-events: none;
 }
 
+
 #side-nav ul .main-list a:hover::after{
    opacity: 1; 
 }
@@ -182,9 +183,19 @@ footer a {
         height: 2rem;
   }
 
+    .overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: none;
+    z-index: 4;
+    }
+
   #side-nav{
     width: 50%;
     left: -50%;
   }
-
 }
