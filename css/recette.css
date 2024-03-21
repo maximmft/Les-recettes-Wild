@@ -190,16 +190,6 @@ p {
     padding: 5px;
 }
 
-#new-comment {
-    resize: inherit;
-
-}
-
-#new-comment:focus-visible {
-    box-shadow: 0 0 0 1px var(--secondary-main-color);
-    outline: none;
-}
-
 .user {
     display: flex;
     flex-direction: row;
@@ -216,13 +206,21 @@ p {
     margin-right: 5px;
 }
 
-#user-meta {
+.user-meta {
     width: 70px;
+    display: flex;
+    flex-direction: column;
+    font-family: "Jost";
 }
 
-#day {
+.name {
+    font-size: 12px; 
+}
+
+.day {
     display: flex;
     flex-direction: row;
+    font-size: 12px;
 }
 
 .comment-post {
@@ -231,6 +229,46 @@ p {
     font-family: "Jost";
     font-size: 14px;
     margin-left: 10px;
+}
+
+#new-comment {
+    resize: inherit;
+    width: 80%;
+}
+
+#new-comment:focus-visible {
+    box-shadow: 0 0 0 1px var(--secondary-main-color);
+    outline: none;
+}
+
+#form-comment {
+    display: flex;
+    flex-direction: row;
+    margin: 2px;
+}
+
+#user-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 1%;
+
+}
+
+#avatar {
+    border-radius: 15px;
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+#choose-name {
+    border-radius: 10px;
+    background-color: var(--secondary-color);
+    color: white;
+    padding-left: 3%;
+    border: none;
+    margin: 1%;
+    font-family: "Jost";
 }
 
 #add-comment {
@@ -243,6 +281,8 @@ p {
     background-color: var(--secondary-color);
     border-radius: 20px;
     width: 200px;
+    border: none;
+    color: white;
 }
 
 #notes {
