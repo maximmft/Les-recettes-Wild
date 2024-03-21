@@ -245,6 +245,7 @@ p {
 #new-comment {
     resize: inherit;
     width: 80%;
+    font-family: jost;
 }
 
 #new-comment:focus-visible {
