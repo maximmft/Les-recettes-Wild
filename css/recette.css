@@ -58,7 +58,18 @@ main {
     z-index: 1;
 }
 
-
+.rates {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+}
+.rates a {
+    float: right;
+    color: #ffffff;
+    text-decoration: none;
+    /* font-size: 3em; */
+    transition: color .4s;
+}
 
 h2,
 h3 {
