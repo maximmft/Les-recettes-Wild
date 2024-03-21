@@ -267,9 +267,8 @@ p {
 }
 
 #avatar {
-    border-radius: 15px;
-    background-color: var(--secondary-color);
-    color: white;
+    color: var(--secondary-color);
+    border-radius: 20px;
 }
 
 #choose-name {
@@ -395,6 +394,22 @@ p {
     #commentaireList {
         margin: 0 1rem;
     }
+    
+    .comment{
+        height: auto;
+    }
 
+    #form-comment{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #new-comment{
+        width: auto;
+    }
+
+    #avatar{
+        margin: 5px 3px 0 0;
+    }
     
 }

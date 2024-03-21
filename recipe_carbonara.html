@@ -112,31 +112,32 @@
         <!-- Commentaire de la recette -->
         <div id="comments">
             <div id="block-comments">
-
                 <div id="list"></div>
                 <form id="form-comment">
-                    <input type="file" name="avatar" id="avatar">
-                    <input type="text" placeholder="Prénom" name="Prénom" id="choose-name">
+                    <div id="user-form">
+                    <input type="file" name="avatar" id="avatar" placeholder="">
+                    <input type="text" placeholder=" Prénom" name="Prénom" id="choose-name">
+                    </div>
                     <textarea placeholder="Ajouter un commentaire ..." name="comment" id="new-comment" cols="30" rows="10"></textarea>
                 </form>
             </div>
-                <!-- Bouton Commmentaire -->
-                <div id="add-comment">
-                    <button id="btn-comment">Ajouter</button>
-                    <!-- Annotation avec étoile -->
-                    <div id="notes">
-                        <div class="rating"><!--
-                --><a href="#5" title="Donner 5 étoiles">★</a><!--
-                --><a href="#4" title="Donner 4 étoiles">★</a><!--
-                --><a href="#3" title="Donner 3 étoiles">★</a><!--
-                --><a href="#2" title="Donner 2 étoiles">★</a><!--
-                --><a href="#1" title="Donner 1 étoile">★</a>
-                        </div>
+            <!-- Bouton Commmentaire-->
+            <div id="add-comment">
+                <button id="btn-comment">Ajouter</button>
+                <!-- Annotation avec étoile -->
+                <div id="notes">
+                    <div class="rating"><!--
+            --><a href="#5" title="Donner 5 étoiles">★</a><!--
+            --><a href="#4" title="Donner 4 étoiles">★</a><!--
+            --><a href="#3" title="Donner 3 étoiles">★</a><!--
+            --><a href="#2" title="Donner 2 étoiles">★</a><!--
+            --><a href="#1" title="Donner 1 étoile">★</a>
                     </div>
                 </div>
             </div>
-        </section>
-    </main>
+        </div>
+    </section>
+</main>
     <!-- Footer de la page -->
     <script src="javascript/script.js"></script>
 </body>

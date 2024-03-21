@@ -109,14 +109,16 @@
         <div id="block-comments">
             <div id="list"></div>
             <form id="form-comment">
-                <input type="file" name="avatar" id="avatar">
-                <input type="text" placeholder="Prénom" name="Prénom" id="choose-name">
+                <div id="user-form">
+                <input type="file" name="avatar" id="avatar" placeholder="">
+                <input type="text" placeholder=" Prénom" name="Prénom" id="choose-name">
+                </div>
                 <textarea placeholder="Ajouter un commentaire ..." name="comment" id="new-comment" cols="30" rows="10"></textarea>
             </form>
-        <!-- Bouton Commmentaire -->
+        </div>
+        <!-- Bouton Commmentaire-->
         <div id="add-comment">
             <button id="btn-comment">Ajouter</button>
-            <!-- </form> -->
             <!-- Annotation avec étoile -->
             <div id="notes">
                 <div class="rating"><!--
@@ -129,8 +131,8 @@
             </div>
         </div>
     </div>
-    </section>
-    </main>
+</section>
+</main>
     <script src="javascript/script.js"></script> 
 </body>
 </html>
