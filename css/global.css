@@ -76,6 +76,7 @@
     pointer-events: none;
 }
 
+
 #side-nav ul .main-list a:hover::after{
    opacity: 1; 
 }
