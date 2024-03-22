@@ -97,7 +97,7 @@ const chooseName = document.querySelector("#choose-name");
 
 // Création comment 
 
-const post = [
+let post = [
   {
     firstname: "Mickael",
     picture: "https://ca.slack-edge.com/T6SG2QGG2-U03TJJCU40P-74266cd58d2e-512",
@@ -127,6 +127,8 @@ const post = [
   },
 
 ]
+console.log(localStorage.getItem("storageItem"));
+post = (localStorage.getItem("storageItem")) ? JSON.parse(localStorage.getItem("storageItem")) : post;
 
 post.forEach((post) => {
   createComment(post.firstname, post.picture, post.date, post.commentPost)
@@ -207,6 +209,7 @@ function addComment() {
           },
 
         )
+        localStorage.setItem("storageItem", JSON.stringify(post));
         createComment(post[post.length - 1].firstname, post[post.length - 1].picture, post[post.length - 1].date, post[post.length - 1].commentPost);
         myFunction();
       }

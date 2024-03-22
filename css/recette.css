@@ -29,7 +29,7 @@ header {
     background-image: url(../image/Pasta/pasta-7236369_640-modified.png);
 }
 
-#chili-header{
+#chili-header {
     background-image: url(../image/Chili/pexels-photo-15881322.jpeg);
 }
 
@@ -63,6 +63,7 @@ main {
     flex-direction: row-reverse;
     justify-content: space-around;
 }
+
 .rates a {
     float: right;
     color: #ffffff;
@@ -192,13 +193,13 @@ p {
     display: flex;
     flex-direction: row;
     block-size: 100px;
-    height: 40px;
     background-color: var(--secondary-color);
     color: white;
     border-radius: 20px;
     margin: 5px;
     margin-bottom: 1px;
     padding: 5px;
+    height: auto
 }
 
 .user {
@@ -225,7 +226,7 @@ p {
 }
 
 .name {
-    font-size: 12px; 
+    font-size: 12px;
 }
 
 .day {
@@ -246,6 +247,7 @@ p {
     resize: inherit;
     width: 80%;
     font-family: jost;
+    height: 40px;
 }
 
 #new-comment:focus-visible {
@@ -334,9 +336,9 @@ p {
     }
 
     #recette {
-    margin: 0;
-    width: 80%;
-    margin-left: 2rem;
+        margin: 0;
+        width: 80%;
+        margin-left: 2rem;
     }
 
     .icon {
@@ -395,22 +397,22 @@ p {
     #commentaireList {
         margin: 0 1rem;
     }
-    
-    .comment{
+
+    .comment {
         height: auto;
     }
 
-    #form-comment{
+    #form-comment {
         display: flex;
         flex-direction: column;
     }
 
-    #new-comment{
+    #new-comment {
         width: auto;
     }
 
-    #avatar{
+    #avatar {
         margin: 5px 3px 0 0;
     }
-    
+
 }
